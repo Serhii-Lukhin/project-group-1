@@ -45,7 +45,6 @@ body {
 .container {
   width: 100%;
   padding: 0 16px;
-  background-color: var(--orange);
 }
 
 @media screen and (min-width: 375px) {
