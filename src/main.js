@@ -1,3 +1,6 @@
+
+import './js/our-products.js'
+=======
 /*soft scroll*/
 
 const anchors = document.querySelectorAll('a[href*="#"]');
@@ -14,3 +17,4 @@ for (let anchor of anchors) {
     });
   });
 }
+
