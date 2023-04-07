@@ -58,7 +58,7 @@
 }
 
 .comp-img{
-    /* margin-bottom: 25px; */
+    
 }
 .comp-thumb{
  
@@ -74,9 +74,14 @@ text-transform: uppercase;
 .comp-overlay-title{
     color:var(--black);
     margin-bottom: 8px;
+    text-transform: uppercase;
 }
 .comp-overlay-ingredient{
+    font-size: 10px;
+    display: block;
     margin-bottom: 14px;
+   width: 279px;
+   
 }
 .comp-overlay-product{
     color:var(--white);
@@ -84,20 +89,22 @@ text-transform: uppercase;
     background-color: var(--orange);
     width: auto;
     height: 24px;
-    padding:6px 16px ;
+    padding:6px 16px;
+    margin-right: 6px;
 }
 .comp-overlay-benefits{
     color:var(--black);
-    width: auto;
+    width: 279px;
     height: 24px;
     padding:6px 16px;
     border: 1px solid var(--orange);
-    border-radius:15px;
+    border-radius:30px;
     
 }
 .comp-overlay-description{
     color: var(--black);
-    overflow:hidden;
+    height: 146px;
+    overflow:scroll;
 }
 
 .comp-overlay{
