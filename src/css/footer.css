@@ -40,7 +40,9 @@
   margin-right: 14px;
 }
 .footer-social-icon {
-  background: #fff;
+  fill: transparent;
+  stroke: currentColor;
+  stroke-width: 1.5px;
 }
 
 .footer-nav-item:not(:last-child) {
@@ -71,9 +73,13 @@
   .footer-social-item:first-child {
     margin-right: 18px;
   }
+  .footer-social-item > a:is(:hover, :focus) {
+    color: var(--orange);
+  }
   .footer-social-icon {
     width: 24px;
     height: 24px;
+    stroke-width: 2px;
   }
   .footer-nav-list {
     display: flex;
