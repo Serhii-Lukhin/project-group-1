@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 * {
     box-sizing: border-box;
 }
@@ -10,29 +11,93 @@
     position: relative;
 
     padding-top: 20px;
+=======
+:root {
+    --basic-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --white-header: #FFFFFF;
+}
+
+a {
+    display: block;
+}
+
+.menu-list-,
+.social-list- {
+    display: none;
+}
+
+.container-header {
+    position: relative;
+
+    padding-top: 20px;
+    padding-bottom: 14px;
+>>>>>>> Stashed changes
 
     background-color: var(--white);
 }
 
+<<<<<<< Updated upstream
 .mob-header-nav- {
+=======
+.header-nav- {
+>>>>>>> Stashed changes
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .header-logo- {
+<<<<<<< Updated upstream
+=======
+    display: flex;
+    align-items: center;
+
+>>>>>>> Stashed changes
     font-weight: 700;
     letter-spacing: -0.03em;
     color: var(--black);
 }
 
+<<<<<<< Updated upstream
+=======
+.icon-chocolate- {
+    width: 21px;
+    height: 21px;
+
+    fill: transparent;
+    stroke: var(--orange);
+
+    margin-left: 4px;
+}
+
+>>>>>>> Stashed changes
 .header-logo-span- {
     font-style: italic;
 }
 
 .mob-menu-open- {
+<<<<<<< Updated upstream
     height: 28px;
     width: 28px;
+=======
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    padding: 0;
+
+    background: transparent;
+    border: none;
+}
+
+.icon-mob-menu-open- {
+    stroke: var(--black);
+    height: 14px;
+    width: 21px;
+>>>>>>> Stashed changes
 }
 
 .mob-menu- {
@@ -73,8 +138,36 @@
     position: absolute;
     top: 20px;
     right: 20px;
+<<<<<<< Updated upstream
 }
 
+=======
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.icon-mob-menu-close- {
+    height: 12px;
+    width: 12px;
+
+    stroke: var(--white-header);
+}
+
+.mob-menu-close-:active .icon-mob-menu-close- {
+    stroke: var(--orange);
+}
+
+
+>>>>>>> Stashed changes
 .mob-menu-list- {
     margin-left: 30px;
     display: block;
@@ -88,7 +181,13 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+<<<<<<< Updated upstream
     color: #FFFFFF;
+=======
+    color: var(--white-header);
+
+    transition: var(--basic-transition);
+>>>>>>> Stashed changes
 }
 
 .mob-menu-link-:active {
@@ -103,9 +202,166 @@
     margin-right: 18px;
 }
 
+<<<<<<< Updated upstream
 
 @media screen and (min-width: 375px) {}
 
 @media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 1200px) {}
+=======
+.mob-social-icon {
+    height: 22px;
+    width: 22px;
+
+    fill: transparent;
+    stroke: var(--white-header);
+
+    transition: var(--basic-transition);
+}
+
+.mob-social-icon:active {
+    stroke: var(--orange);
+}
+
+
+@media screen and (min-width: 375px) {}
+
+@media screen and (min-width: 768px) {
+
+    .container-header {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .mob-menu-open- {
+        width: 32px;
+        height: 32px;
+    }
+
+    .icon-mob-menu-open- {
+        height: 16px;
+        width: 24px;
+    }
+
+    .mob-menu- {
+        width: 290px;
+        max-height: 1024px;
+
+        padding-top: 156px;
+        padding-left: 32px;
+        padding-bottom: 24px;
+    }
+
+    .mob-menu-close- {
+        top: 24px;
+        right: 32px;
+
+        width: 32px;
+        height: 32px;
+    }
+
+    .icon-mob-menu-close- {
+        height: 14px;
+        width: 14px;
+
+        stroke: var(--white-header);
+    }
+
+    .mob-menu-list- {
+        margin-left: 53px;
+    }
+
+    .mob-social-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .mob-menu-open-,
+    .mob-menu- {
+        display: none;
+    }
+
+    .menu-list-,
+    .social-list- {
+        display: block;
+    }
+
+    .container-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-top: 26px;
+        padding-bottom: 34px;
+    }
+
+    .header-logo- {
+        font-size: 18px;
+        line-height: 1.11;
+
+        margin-right: 188px;
+    }
+
+    .icon-chocolate- {
+        width: 24px;
+        height: 24px;
+    }
+
+    .menu-list- {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-item-:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    .social-list- {
+        display: flex;
+        align-items: center;
+
+        margin-left: 137px;
+    }
+
+    .social-item-:not(:last-child) {
+        margin-right: 18px;
+    }
+
+    .social-item- {
+        height: 24px;
+    }
+
+    .menu-link- {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+
+        color: var(--black);
+
+        transition: var(--basic-transition);
+    }
+
+    .menu-link-:hover,
+    .menu-link:focus {
+        color: var(--orange);
+    }
+
+    .social-icon- {
+        fill: transparent;
+        stroke: var(--black);
+
+        transition: var(--basic-transition);
+    }
+
+    .social-link-:hover .social-icon-,
+    .social-link-:focus .social-icon- {
+        stroke: var(--orange);
+    }
+}
+>>>>>>> Stashed changes
