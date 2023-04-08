@@ -83,6 +83,7 @@
 
     background-color: var(--orange);
     border-radius: 100px;
+    border-color: transparent;
   }
 }
 @media screen and (min-width: 768px) {
@@ -104,11 +105,17 @@
   .buynow-submit.button {
     padding: 14px 40px;
     gap: 14px;
-
     width: 133px;
     height: 45px;
+    transition: color, background-color, var(--basic-transition);
   }
 }
+.buynow-submit.button:hover,
+.buynow-submit.button:focus {
+  color: var(--orange);
+  background-color: #fcf1e0;
+}
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1168px;
