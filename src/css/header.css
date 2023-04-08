@@ -3,10 +3,6 @@
     --white-header: #FFFFFF;
 }
 
-a {
-    display: block;
-}
-
 .menu-list-,
 .social-list- {
     display: none;
