@@ -87,6 +87,12 @@
   .footer-nav-item:not(:last-child) {
     margin-right: 24px;
   }
+  .footer-nav-link:is(:hover, :focus) {
+    color: var(--orange);
+  }
+  .footer-address-item > a:is(:hover, :focus) {
+    color: var(--orange);
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-social-list {

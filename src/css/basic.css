@@ -16,6 +16,7 @@
   --dark-purple: #1e1823;
   --orange: #fd9222;
   --white: #fafafa;
+  
 }
 
 body {
@@ -28,7 +29,7 @@ body {
   letter-spacing: -0.02em;
   padding: 0;
   margin: 0;
-  background-color: #e2e2e2;
+  background-color: var(--white);
   color: var(--black);
 }
 /*fonts*/
