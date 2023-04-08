@@ -34,6 +34,8 @@
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 50%;
 }
 .review-card-name {
   font-weight: 600;
@@ -83,21 +85,42 @@
 }
 .review-prev {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   left: 0;
-  background-color: aquamarine;
   opacity: 0.5;
   width: 40px;
   height: 100%;
+  border: none;
+  background-color: transparent;
+  transition: background-color var(--basic-transition);
 }
 .review-next {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   right: 0;
-  background-color: aquamarine;
   opacity: 0.5;
   width: 40px;
   height: 100%;
+  border: none;
+  background-color: transparent;
+  transition: background-color var(--basic-transition);
+}
+.review-prev-icon {
+  transform: rotateY(180deg);
+  fill: currentColor;
+}
+.review-next-icon {
+  fill: currentColor;
+}
+.review-next:is(:hover),
+.review-prev:is(:hover) {
+  background-color: rgba(226, 226, 226, 0.4);
 }
 @media screen and (min-width: 375px) {
 }
