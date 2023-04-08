@@ -59,8 +59,8 @@
   border-radius: 50%;
   background-color: rgba(17, 17, 17, 0.1);
 }
-.review-slidebar-status-point:not(:last-child) {
-  margin-right: 13px;
+.review-slidebar-status-point:not(:first-child) {
+  margin-left: 13px;
 }
 .review-ssp-active {
   width: 28px;
