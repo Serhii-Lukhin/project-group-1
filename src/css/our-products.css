@@ -29,6 +29,7 @@
     font-size: 18px;
     background: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -89,6 +90,7 @@
 @media screen and (min-width: 768px) {
   .swiper {
     width: 704px;
+    padding-bottom: 172px;
   }
   .swiper-slide {
     width: 270px;

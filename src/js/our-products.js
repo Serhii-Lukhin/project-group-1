@@ -1,7 +1,5 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-   slidesPerView: 4  ,
-      spaceBetween: 18,
   direction: 'horizontal',
   loop: true,
 
