@@ -31,13 +31,16 @@
     
 }
 .comp-item{
+    display: block;
     position: relative;
     overflow: hidden;
     width: auto;
     height: 270px;
+    align-content: center;
    
     border-radius: 15px;
     padding: 28px;
+
 }
 .comp-item:first-child {
     border: 1px solid var(--orange);
@@ -61,7 +64,9 @@
     border:var(--white);
 }
 .comp-img{
-    margin: 0;
+    display: block;
+    margin:0 auto;
+    margin-bottom: 25px;
 }
 
 .comp-thumb-title{
