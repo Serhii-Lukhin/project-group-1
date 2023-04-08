@@ -1,0 +1,40 @@
+@media screen and (min-width: 375px) {
+  .container {
+    width: 367px;
+    margin: 0 auto;
+  }
+  /* Submit button*/
+  .buynow-submit.button {
+    font-family: inherit;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.214;
+    color: var(--white);
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 28px;
+    gap: 14px;
+
+    position: absolute;
+    width: 109px;
+    height: 41px;
+    left: 24px;
+    top: 921px;
+
+    background-color: var(--orange);
+    border-radius: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 736px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1168px;
+  }
+}
