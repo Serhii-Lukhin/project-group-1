@@ -47,24 +47,66 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: var(--orange);
+    margin-bottom: 32px;
   }
   .section-name-buynow-second {
     color: var(--black);
   }
-  .buynow-img {
+  .buynow-img.list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
   }
 
   .buynow-img-item {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    padding: 8px 16px;
+    align-items: center;
+    justify-content: space-between;
   }
-  .buynow-item-weight {
+
+  .buynow-weight {
+    background: var(--white);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    width: 70px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .buynow-personal-information {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--item-text-color);
+    margin-bottom: 16px;
   }
   .buynow-personal-data-form {
   }
   .buynow-personal-data {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 14px 18px;
+    gap: 40px;
+  }
+  .buynow-personal-item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
   }
   .buynow-form-input {
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 8px;
+    outline: transparent;
   }
   /* Submit button*/
   .buynow-submit.button {
@@ -100,6 +142,22 @@
   .section-name-buynow {
     font-size: 24px;
     line-height: 1.17;
+  }
+  .buynow-img.list {
+    flex-direction: row;
+    row-gap: 0;
+    column-gap: 16px;
+  }
+  .buynow-img-item {
+    flex-direction: column;
+    padding: 24px 20px 18px 20px;
+    justify-content: center;
+    row-gap: 14px;
+  }
+  .buynow-weight {
+    flex-direction: column;
+    width: 96px;
+    height: 33px;
   }
   /* Submit button*/
   .buynow-submit.button {
