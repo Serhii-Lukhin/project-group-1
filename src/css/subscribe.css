@@ -1,0 +1,54 @@
+@media screen and (min-width: 375px) {
+    .container {
+        max-width: 325px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin: 0 auto;
+    }
+    .sub-title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: calc(24/20);
+        text-align: center;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .sub-desc {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(18/14);
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+    }
+    .sub-button {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: calc(17/14);
+        color: #FFFFFF;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        
+    }
+    .sub-title {
+    }
+    .sub-desc {
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        
+    }
+    .sub-title {
+    }
+    .sub-desc {
+    }
+}
+    
