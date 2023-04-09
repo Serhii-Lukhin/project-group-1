@@ -31,7 +31,7 @@
 .mob-menu- {
   position: fixed;
   width: 220px;
-  height: 100vh;
+  height: 100%;
 
   top: 0;
   right: 0;
@@ -174,7 +174,6 @@
 
   .mob-menu- {
     width: 290px;
-    max-height: 100vh;
     padding-top: 156px;
     padding-bottom: 24px;
   }
