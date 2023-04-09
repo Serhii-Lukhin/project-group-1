@@ -92,27 +92,50 @@
         justify-content: center;
         margin: 0 auto;
         margin-bottom: 24px;
-        
     }
+  }
+  .sub-title {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    max-width: 378px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .sub-desc {
+    max-width: 467px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
 }
-
 
 @media screen and (min-width: 1200px) {
-    .section-sub {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url(../img/subscribe/desktop/subcribe-1x.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        flex-grow: 1;
-    }
-    @media (min-device-pixel-ratio: 2),
+  .section-sub {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/subscribe/desktop/subcribe-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+  }
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
-    (min-resolution: 2dppx){
-        .section-sub {
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-            url(../img/subscribe/desktop/subcribe-2x.jpg);
-        }
+    (min-resolution: 2dppx) {
+    .section-sub {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/subscribe/desktop/subcribe-2x.jpg);
     }
+  }
 }
-    

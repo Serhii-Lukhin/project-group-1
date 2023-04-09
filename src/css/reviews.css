@@ -88,30 +88,28 @@
 .review-prev {
   position: absolute;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   top: 0;
   left: 0;
   opacity: 0.5;
-  width: 40px;
+  width: calc(100% / 4);
   height: 100%;
   border: none;
   background-color: transparent;
-  transition: background-color var(--basic-transition);
 }
 .review-next {
   position: absolute;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   top: 0;
   right: 0;
   opacity: 0.5;
-  width: 40px;
+  width: calc(100% / 4);
   height: 100%;
   border: none;
   background-color: transparent;
-  transition: background-color var(--basic-transition);
 }
 .review-prev-icon {
   transform: rotateZ(90deg);
@@ -125,7 +123,6 @@
 }
 .review-next:is(:hover),
 .review-prev:is(:hover) {
-  background-color: rgba(226, 226, 226, 0.4);
   color: var(--orange);
 }
 
