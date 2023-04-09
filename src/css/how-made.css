@@ -6,10 +6,6 @@
   margin-bottom: 32px;
 }
 
-.orange-title {
-  color: var(--orange);
-}
-
 .video-block {
   display: block;
   position: relative;
