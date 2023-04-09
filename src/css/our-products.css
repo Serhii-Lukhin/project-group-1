@@ -1,6 +1,6 @@
 @media screen and (min-width: 375px) {
   .production {
-    padding-top: 72px;
+    padding: 72px 0;
   }
 
   .production-title {
@@ -9,6 +9,7 @@
     letter-spacing: -0.03em;
     color: var(--black);
     margin-bottom: 32px;
+    position: relative;
   }
 
   .production-title-second {
@@ -29,8 +30,12 @@
     font-size: 18px;
     background: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #ffffff;
+      border: 1px solid rgba(17, 17, 17, 0.1);
+      border-radius: 15px;
   }
   .swiper-pagination > .swiper-pagination-bullet-active {
     background: var(--orange);
@@ -85,26 +90,29 @@
     align-items: center;
     justify-content: center;
   }
+
+  .swiper-pagination {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
+  .production {
+    padding: 100px 0;
+  }
   .swiper {
     width: 704px;
   }
   .swiper-slide {
     width: 270px;
     height: 364px;
-    background: #ffffff;
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .production {
-      padding-top: 72px;
-      padding-bottom: 172px;
-    }
-.swiper {
+    padding-top: 128px;
+    padding-bottom: 173px;
+  }
+  .swiper {
     width: 1136px;
   }
-
 }
