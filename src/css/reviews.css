@@ -78,6 +78,8 @@
   line-height: 22px;
   color: var(--black);
   background-color: transparent;
+  transition: background-color var(--basic-transition),
+    color var(--basic-transition);
 }
 .review-button:is(:hover, :focus) {
   background-color: var(--orange);
