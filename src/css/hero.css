@@ -112,7 +112,7 @@ url("../img/hero/mobile/chocolate-mobile-2x.jpg");
     fill: var(--orange);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.scroll{
+.scrol{
     display: flex;
     background-color: var(--white);
         width: 38px;
