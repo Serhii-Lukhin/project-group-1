@@ -1,12 +1,9 @@
 
-    .sub-container {
-        padding-left: 15px;
-        padding-right: 15px;
+    .container {
         padding-top: 62px;
         padding-bottom: 63px;
-        margin: 0 auto;
     }
-    .sub-section {
+    .section-sub {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
         url(../img/subscribe/mobile/subcribe-1x.jpg);
         background-repeat: no-repeat;
@@ -17,10 +14,13 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx){
-        .sub-section {
+        .section-sub {
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
             url(../img/subscribe/mobile/subcribe-2x.jpg);
         }
+    }
+    .section-name {
+        text-transform: none;
     }
     .sub-title {
         max-width: 291px;
@@ -35,11 +35,12 @@
         color: #FFFFFF;
         text-align: center;
         justify-content: center;
+        margin-bottom: 24px;
     }
     .sub-desc {
         max-width: 326px;
         margin: 0 auto;
-        margin-top: 24px;
+        margin-bottom: 24px;
         font-weight: 400;
         font-size: 14px;
         line-height: calc(18/14);
@@ -61,7 +62,6 @@
         padding: 12px 28px;
         cursor: pointer;
         border: none;
-        margin-top: 24px;
         transition: var(--basic-transition);
     }
     .sub-button:is(:hover, :focus) {
@@ -71,11 +71,11 @@
 
 
 @media screen and (min-width: 768px) {
-    .sub-container {
+    .container {
         padding-top: 72px;
         padding-bottom: 72px;
     }
-    .sub-section {
+    .section-sub {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
         url(../img/subscribe/tablet/subcribe-1x.jpg);
         background-repeat: no-repeat;
@@ -86,7 +86,7 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx){
-        .sub-section {
+        .section-sub {
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
             url(../img/subscribe/tablet/subcribe-2x.jpg);
         }
@@ -99,22 +99,21 @@
         text-align: center;
         justify-content: center;
         align-items: center;
+        margin-bottom: 24px;
     }
     .sub-desc {
         max-width: 467px;
         text-align: center;
         justify-content: center;
         margin: 0 auto;
-        margin-top: 24px;
+        margin-bottom: 24px;
         
     }
 }
 
 
 @media screen and (min-width: 1200px) {
-    .sub-container {
-    }
-    .sub-section {
+    .section-sub {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
         url(../img/subscribe/desktop/subcribe-1x.jpg);
         background-repeat: no-repeat;
@@ -125,7 +124,7 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx){
-        .sub-section {
+        .section-sub {
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
             url(../img/subscribe/desktop/subcribe-2x.jpg);
         }
