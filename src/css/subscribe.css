@@ -73,10 +73,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    padding-top: 72px;
-    padding-bottom: 72px;
-  }
   .section-sub {
     background-image: linear-gradient(
         0deg,
