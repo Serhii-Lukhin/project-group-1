@@ -15,9 +15,53 @@
   background-color: var(--dark-purple);
 }
 
+.adv-bg {
+  padding-top: 20px;
+  padding-bottom: 36px;
+}
+
+.adv-list {
+}
+
 .adv-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.5);
   width: 62px;
   height: 62px;
+  margin-bottom: 22px;
+}
+
+.adv-icon {
+  fill: var(--orange);
+}
+
+.adv-list-item:nth-child(1) {
+  margin-bottom: 38px;
+}
+
+.adv-list-item:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.adv-list-item > h3 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--white-header);
+  margin-bottom: 18px;
+}
+
+.adv-list-item > p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
 }
