@@ -47,8 +47,11 @@
   border: 1px solid var(--dark-purple);
   background-color: var(--dark-purple);
 }
+.comp-item:nth-child(3n):hover {
+  border: 1px solid var(--orange);
+}
 .comp-item:hover {
-  border: var(--white);
+  background-color: transparent;
 }
 .comp-img {
   display: block;
@@ -105,7 +108,6 @@
   background-color: var(--white);
 
   border-radius: 15px;
-  border-color: transparent;
   top: 0;
   left: 0;
   width: 100%;
@@ -114,7 +116,7 @@
   transform: translateY(100%);
   transition: transform 250ms ease, opacity 1s ease;
 }
-.comp-thumb:is(:hover, :focus) .comp-overlay {
+.comp-item:is(:hover, :focus) .comp-overlay {
   transform: translateY(0);
   opacity: 1;
 }
