@@ -11,6 +11,8 @@
     letter-spacing: -0.03em;
     text-align: center;
     margin-bottom:24px;
+    text-transform: uppercase;
+
 }
 .comp-subtitle {
     font-size:14px;
@@ -20,6 +22,8 @@
 }
 .comp-accent{
     color: var(--orange)
+    
+    
 }
 .comp-features {
     margin-bottom: 32px;
