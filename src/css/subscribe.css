@@ -17,13 +17,13 @@
             url(../img/subscribe/mobile/subcribe-2x.jpg);
         }
     }
-    .section-name {
-        color: #FFFFFF;
+    .sub-title{ 
         max-width: 291px;
         text-align: center;
         justify-content: center;
         margin: 0 auto;
         margin-bottom: 24px;
+        color: #FFFFFF;
     }
     .sub-desc {
         max-width: 326px;
@@ -78,15 +78,13 @@
             url(../img/subscribe/tablet/subcribe-2x.jpg);
         }
     }
-    .sub-title {
-        font-size: 24px;
-        line-height: calc(28/24);
-        max-width: 378px;
-        margin: 0 auto;
+    .sub-title{ 
+        max-width: 291px;
         text-align: center;
         justify-content: center;
-        align-items: center;
+        margin: 0 auto;
         margin-bottom: 24px;
+        color: #FFFFFF;
     }
     .sub-desc {
         max-width: 467px;
