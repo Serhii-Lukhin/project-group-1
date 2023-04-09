@@ -114,16 +114,21 @@
   transition: background-color var(--basic-transition);
 }
 .review-prev-icon {
-  transform: rotateY(180deg);
+  transform: rotateZ(90deg);
   fill: currentColor;
+  transition: fill var(--basic-transition);
 }
 .review-next-icon {
+  transform: rotateZ(-90deg);
   fill: currentColor;
+  transition: fill var(--basic-transition);
 }
 .review-next:is(:hover),
 .review-prev:is(:hover) {
   background-color: rgba(226, 226, 226, 0.4);
+  color: var(--orange);
 }
+
 @media screen and (min-width: 375px) {
 }
 @media screen and (min-width: 768px) {
