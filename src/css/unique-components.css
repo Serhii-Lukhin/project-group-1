@@ -11,9 +11,7 @@
   text-align: center;
   margin-top: 24px;
 }
-.comp-accent {
-  color: var(--orange);
-}
+
 .comp-features {
   margin-bottom: 32px;
 }
@@ -129,11 +127,6 @@
   .comp-features {
     padding: 0 109px 0 109px;
     margin-bottom: 50px;
-  }
-  .comp-title {
-    font-size: 24px;
-    font-weight: 800;
-    padding: 0 37px 0 37px;
   }
 
   .comp-ingredients {
