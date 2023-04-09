@@ -6,7 +6,6 @@
   top: 0;
   left: 0;
   z-index: 1;
-  display: none;
 }
 .exnew-modal {
   position: absolute;
@@ -56,6 +55,7 @@
   padding: 0 0 0 14px;
 }
 .exnew-form-input::placeholder {
+  font-family: 'Montserrat', sans-serif;
   color: rgba(46, 47, 66, 0.2);
 }
 .exnew-modal-submit {
