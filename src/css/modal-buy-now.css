@@ -56,6 +56,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+    margin-bottom: 32px;
   }
 
   .buynow-img-item {
@@ -79,34 +80,48 @@
     align-items: center;
     justify-content: center;
   }
-  .buynow-personal-information {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
 
-    color: var(--item-text-color);
-    margin-bottom: 16px;
-  }
   .buynow-personal-data-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 18px;
+  }
+  .buynow-common-name {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
   }
   .buynow-personal-data {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
-    padding: 14px 18px;
-    gap: 40px;
+    padding: 0px;
+  }
+  .uynow-personal-data.card {
+    position: relative;
   }
   .buynow-personal-item {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
+    margin-bottom: 8px;
   }
   .buynow-form-input {
+    font-family: inherit;
+    width: 100%;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
     border-radius: 8px;
     outline: transparent;
+    background-color: transparent;
+
+    line-height: 1.214;
+    color: rgba(64, 64, 64, 0.3);
+    padding: 14px 18px;
+  }
+  .buynow-card {
+    position: absolute;
   }
   /* Submit button*/
   .buynow-submit.button {

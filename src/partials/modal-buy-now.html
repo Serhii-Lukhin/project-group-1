@@ -2,7 +2,7 @@
 <div class="buynow-modal">
   <button type="button" class="buynow-modal-close button">
     <svg class="buynow-modal-icon">
-      <use href="../img/icons.svg#"></use>
+      <use href="../img/icons.svg#icon-close"></use>
     </svg>
   </button>
   <h2 class="section-name-buynow">
@@ -37,29 +37,32 @@
       <div class="buynow-weight">300 g</div>
     </li>
   </ul>
-  <p class="buynow-personal-information">Personal information</p>
   <form class="buynow-personal-data-form">
-    <div class="buynow-personal-data">
-      <label for="name" class="buynow-personal-item">Name</label>
-      <input
-        type="text"
-        class="buynow-form-input"
-        name="name"
-        id="name"
-        autofocus
-        required
-      />
-    </div>
-    <div class="buynow-personal-data">
-      <label for="name" class="buynow-personal-item">Surname</label>
-      <input
-        type="text"
-        class="buynow-form-input"
-        name="surname"
-        id="surname"
-        autofocus
-        required
-      />
+    <div class="buynow-common-name">
+      <div class="buynow-personal-data">
+        <label for="name" class="buynow-personal-item"
+          >Personal information</label
+        >
+        <input
+          type="text"
+          class="buynow-form-input"
+          name="name"
+          id="name"
+          autofocus
+          required
+          placeholder="Name"
+        />
+      </div>
+      <div class="buynow-personal-data">
+        <input
+          type="text"
+          class="buynow-form-input"
+          name="surname"
+          id="surname"
+          required
+          placeholder="Surname"
+        />
+      </div>
     </div>
     <div class="buynow-personal-data">
       <label for="mail" class="buynow-personal-item">Email</label>
@@ -69,6 +72,7 @@
         name="mail"
         id="mail"
         required
+        placeholder="Enter your email"
       />
     </div>
     <div class="buynow-personal-data">
@@ -82,16 +86,21 @@
         required
       />
     </div>
-    <div class="buynow-personal-data">
+    <div class="buynow-personal-data card">
       <label for="card-number" class="buynow-personal-item">Card number</label>
       <input
         type="number"
         class="buynow-form-input"
         name="card-number"
         id="card-number"
-        placeholder="Card Number"
+        placeholder="Enter card"
         required
       />
+      <div class="buynow-card">
+        <svg class="buynow-icon">
+          <use href="../img/icon-svg-color.svg#icon-mastercard"></use>
+        </svg>
+      </div>
     </div>
     <div class="buynow-personal-data"></div>
     <div class="buynow-personal-data">
@@ -100,8 +109,8 @@
         name="comment"
         class="buynow-form-input"
         id="comment"
-        rows="6"
-        placeholder="Text input"
+        rows="3"
+        placeholder="Enter text"
       ></textarea>
     </div>
     <button type="submit" class="buynow-submit button">Submit</button>
