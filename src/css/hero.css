@@ -1,3 +1,6 @@
+.hero-{
+    padding-bottom: 72px;
+}
 .hero-container {
     padding-top: 395px;
     padding-bottom: 20px;
@@ -125,6 +128,9 @@ letter-spacing: -0.03em;
 
 }
 @media screen and (min-width: 768px){
+    .hero-{
+        padding-bottom: 50px;
+    }
     .hero-container{
         padding-left: 40px;
         padding-right: 40px;
@@ -155,9 +161,10 @@ letter-spacing: -0.03em;
     }
 }
 @media screen and (min-width: 1200px){
+    .hero-{
+        padding-bottom: 72px;
+    }
     .hero-container {
-        
-    
          background-image: url("../img/hero/desktop/chocolate-desktop-1x.jpg");
     }
         @media (min-device-pixel-ratio: 2),
