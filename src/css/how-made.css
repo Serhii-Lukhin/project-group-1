@@ -1,15 +1,9 @@
 .made {
-  padding-bottom: 92px;
+  padding-bottom: 72px;
 }
 
-.made-title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  margin-bottom: 24px;
+.made .section-name {
+  margin-bottom: 32px;
 }
 
 .orange-title {
@@ -93,27 +87,28 @@
 }
 
 @media screen and (min-width: 375px) {
-  .made {
-    padding-bottom: 20px;
-  }
-
   .made-video {
     padding-top: 93%;
   }
 }
 
+@media screen and (max-width: 767px) {
+  .made .section-name {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .made {
-    padding-bottom: 28px;
+    padding-bottom: 100px;
   }
 
   .made > .container {
     width: 646px;
   }
 
-  .made-title {
-    font-size: 24px;
-    line-height: 1.17;
+  .made .section-name {
     margin-bottom: 50px;
   }
 
@@ -138,7 +133,7 @@
 
 @media screen and (min-width: 1200px) {
   .made {
-    padding-bottom: 56px;
+    padding-bottom: 128px;
   }
 
   .made > .container {
