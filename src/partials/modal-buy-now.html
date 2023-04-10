@@ -10,30 +10,75 @@
   </h2>
   <ul class="buynow-img list">
     <li class="buynow-img-item">
-      <img
-        srcset="../img/buy-now/mobile/dark-1x.png 1x ../img/buy-now/mobile/dark-2x.png 2x"
-        class="buy-now-img"
-        src="../img/buy-now/mobile/dark-1x.png"
-        alt="two pieces of dark chocolate with dark chocolate chips"
-      />
+      <picture>
+        <source
+          srcset="
+            ../img/buy-now/mobile/dark-1x.png 1x,
+            ../img/buy-now/mobile/dark-2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ../img/buy-now/desktop-tablet/dark-1x.png 1x,
+            ../img/buy-now/desktop-tablet/dark-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="buy-now-img"
+          src="../img/buy-now/mobile/dark-1x.png"
+          alt="two pieces of dark chocolate with dark chocolate chips"
+        />
+      </picture>
       <div class="buynow-weight">100 g</div>
     </li>
     <li class="buynow-img-item">
-      <img
-        srcset="../img/buy-now/mobile/pyramid-1x.png 1x ../img/buy-now/mobile/pyramid-2x.png 2x "
-        class="buy-now-img"
-        src="../img/buy-now/mobile/pyramid-1x.png"
-        alt="a pyramid of alternating five pieces of white and black chocolate with nuts"
-      />
+      <picture>
+        <source
+          srcset="
+            ../img/buy-now/mobile/pyramid-1x.png 1x,
+            ../img/buy-now/mobile/pyramid-2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ../img/buy-now/desktop-tablet/pyramid-1x.png 1x,
+            ../img/buy-now/desktop-tablet/pyramid-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="buy-now-img"
+          src="../img/buy-now/mobile/pyramid-1x.png"
+          alt="a pyramid of alternating five pieces of white and black chocolate with nuts"
+        />
+      </picture>
       <div class="buynow-weight">200 g</div>
     </li>
     <li class="buynow-img-item">
-      <img
-        srcset="../img/buy-now/mobile/stick-1x.png 1x ../img/buy-now/mobile/stick-2x.png 2x"
-        class="buy-now-img"
-        src="../img/buy-now/mobile/stick-1x.png"
-        alt="bar of dark and milk chocolate, part of which has been rubbed into chocolate chips"
-      />
+      <picture>
+        <source
+          srcset="
+            ../img/buy-now/mobile/stick-1x.png 1x,
+            ../img/buy-now/mobile/stick-2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ../img/buy-now/desktop-tablet/stick-1x.png 1x,
+            ../img/buy-now/desktop-tablet/stick-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="buy-now-img"
+          src="../img/buy-now/mobile/stick-1x.png"
+          alt="bar of dark and milk chocolate, part of which has been rubbed into chocolate chips"
+        />
+      </picture>
       <div class="buynow-weight">300 g</div>
     </li>
   </ul>

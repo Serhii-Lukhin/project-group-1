@@ -64,7 +64,10 @@
     align-items: center;
     justify-content: space-between;
   }
-
+  .buy-now-img {
+    width: 84px;
+    height: 69px;
+  }
   .buynow-weight {
     background: var(--white);
     border: 1px solid rgba(17, 17, 17, 0.1);
@@ -210,6 +213,10 @@
     padding: 24px 20px 18px 20px;
     justify-content: center;
     row-gap: 14px;
+  }
+  .buy-now-img {
+    width: 120px;
+    height: 107px;
   }
   .buynow-weight {
     flex-direction: column;
