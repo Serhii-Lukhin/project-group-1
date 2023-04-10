@@ -4,6 +4,10 @@
   padding-bottom: 72px;
 }
 
+.comp-title {
+  margin-bottom: 24px;
+}
+
 .comp-subtitle {
   font-size: 14px;
   line-height: 1.2;
@@ -130,7 +134,9 @@
     padding: 0 109px 0 109px;
     margin-bottom: 50px;
   }
-
+  .comp-title {
+    margin-bottom: 28px;
+  }
   .comp-ingredients {
     flex-direction: row;
     flex-wrap: wrap;

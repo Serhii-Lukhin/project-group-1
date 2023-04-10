@@ -162,22 +162,11 @@
 /* Submit button*/
 .buynow-submit.button {
   font-family: inherit;
-  text-align: center;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.214;
   color: var(--white-header);
-
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 12px 28px;
-  width: 109px;
-  height: 41px;
-
   background-color: var(--orange);
-  border-radius: 100px;
-  border-color: transparent;
+  border: none;
+  height: 41px;
+  width: 109px;
 }
 @media screen and (min-width: 375px) {
 }
@@ -272,10 +261,8 @@
   }
   /* Submit button*/
   .buynow-submit.button {
-    padding: 14px 40px;
     width: 133px;
     height: 45px;
-    transition: color, background-color, var(--basic-transition);
   }
 }
 .buynow-submit.button:hover,

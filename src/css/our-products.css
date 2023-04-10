@@ -2,10 +2,6 @@
   padding-bottom: 72px;
 }
 
-.production-title {
-  color: var(--black);
-}
-
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,

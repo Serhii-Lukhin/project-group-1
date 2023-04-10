@@ -57,11 +57,9 @@
   color: rgba(46, 47, 66, 0.2);
 }
 .exnew-modal-submit {
-  font-weight: 600;
-  line-height: 1.22;
+  font-family: inherit;
   width: 100px;
   height: 45px;
-  border-radius: 100px;
   background-color: var(--orange);
   color: #fff;
   border: none;

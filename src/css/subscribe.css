@@ -38,16 +38,11 @@
   color: #ffffff;
 }
 .sub-button {
-  font-weight: 600;
   color: #ffffff;
   background-color: var(--orange);
   display: block;
   margin: 0 auto;
-  border-radius: 100px;
-  padding: 12px 28px;
   border: none;
-  transition: color var(--basic-transition),
-    background-color var(--basic-transition);
 }
 .sub-button:is(:hover, :focus) {
   background-color: #fcf1e0;
@@ -84,7 +79,6 @@
     max-width: 467px;
   }
   .sub-button {
-    padding: 14px 40px;
     font-size: 18px;
     line-height: 1.22;
   }

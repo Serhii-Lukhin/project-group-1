@@ -60,8 +60,15 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/*buttons*/
+.btn {
+  padding: 12px 28px;
+  border-radius: 100px;
+  font-weight: 600;
+  transition: background-color var(--basic-transition),
+    color var(--basic-transition), border-color var(--basic-transition);
+}
 /*container*/
-
 .container {
   max-width: 100%;
   padding: 0 16px;
@@ -81,6 +88,9 @@ body {
     font-size: 24px;
     line-height: 1.17;
     margin-bottom: 50px;
+  }
+  .btn {
+    padding: 14px 40px;
   }
 }
 @media screen and (min-width: 1200px) {
