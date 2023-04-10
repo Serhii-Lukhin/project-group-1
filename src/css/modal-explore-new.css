@@ -5,8 +5,15 @@
   background-color: #fff;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transition: transform var(--basic-transition) 0.1s,
+    opacity var(--basic-transition) 0.1s;
   border-radius: 15px;
+}
+.backdrop-modal.is-hidden .exnew-modal {
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
 }
 .exnew-modal-img {
   border-top-right-radius: 15px;
