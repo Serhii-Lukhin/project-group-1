@@ -1,23 +1,18 @@
 .exnew-modal {
-  position: absolute;
   width: 311px;
   height: 350px;
   background-color: #fff;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  border-radius: 15px;
+  transform: scale(1);
   opacity: 1;
   transition: transform var(--basic-transition) 0.1s,
     opacity var(--basic-transition) 0.1s;
-  border-radius: 15px;
+  overflow: hidden;
+  margin: auto;
 }
 .backdrop-modal.is-hidden .exnew-modal {
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: scale(0.9);
   opacity: 0;
-}
-.exnew-modal-img {
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
 }
 .exnew-modal-close {
   padding: 0;
