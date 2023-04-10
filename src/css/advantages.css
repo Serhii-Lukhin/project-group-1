@@ -13,40 +13,12 @@
   margin: -1px;
 }
 
-/* Обгортка */
+/* Section */
 
 .adv-section {
   background-color: var(--dark-purple);
-}
-
-.adv-section .container {
   padding-top: 20px;
   padding-bottom: 36px;
-}
-
-@media (min-width: 768px) {
-  .adv-section .container {
-    padding: 50px 32px 85px 32px;
-  }
-}
-
-/* UL */
-
-@media (min-width: 768px) {
-  .adv-list {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 50px;
-    column-gap: 60px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .adv-list {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 88px;
-  }
 }
 
 /* Li */
@@ -57,33 +29,6 @@
 
 .adv-list-item:nth-child(2) {
   margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-  .adv-list .adv-list-item {
-    width: calc((100% - 88px) / 2);
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .adv-list .adv-list-item {
-    width: calc((100% - 176px) / 3);
-    position: relative;
-  }
-}
-
-@media (min-width: 1200px) {
-  .adv-list-item:not(:last-child):after {
-    content: '';
-    position: absolute;
-    width: 124px;
-    height: 0px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    transform: rotate(90deg);
-    right: -79px;
-    top: 50%;
-  }
 }
 
 /* Icons */
@@ -123,4 +68,45 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* Media */
+
+@media (min-width: 768px) {
+  .adv-section {
+    padding-top: 50px;
+    padding-bottom: 85px;
+  }
+  .adv-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 60px;
+  }
+  .adv-list .adv-list-item {
+    width: calc((100% - 88px) / 2);
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .adv-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 88px;
+  }
+  .adv-list .adv-list-item {
+    width: calc((100% - 176px) / 3);
+    position: relative;
+  }
+  .adv-list-item:not(:last-child):after {
+    content: '';
+    position: absolute;
+    width: 124px;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform: rotate(90deg);
+    right: -79px;
+    top: 50%;
+  }
 }
