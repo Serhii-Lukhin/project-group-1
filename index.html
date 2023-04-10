@@ -11,7 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <script type="module" crossorigin src="/project-group-1/assets/index-961e7a8f.js"></script>
-    <link rel="stylesheet" href="/project-group-1/assets/index-8b86b9c5.css">
+    <link rel="stylesheet" href="/project-group-1/assets/index-de14a7c1.css">
   </head>
   <body>
     <header class="header-" id="header">
@@ -141,26 +141,32 @@
 </header>
 
     <main>
-      
-<section class="hero-">
-    <div class="container">
-        <div class="hero-container">
-        <h1 class="visually-hidden">All about chocolate</h1>
-        <h2 class="hero-title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h2>
-        <div class="hero-button">
-        <button class="hero-button-by" type="button">By now</button>
+      <section class="hero-">
+  <div class="container">
+    <div class="hero-container">
+      <h1 class="visually-hidden">All about chocolate</h1>
+      <h2 class="hero-title">
+        Treat yourself or a loved one to our finest ingredients for a moment of
+        pure delight!
+      </h2>
+      <div class="hero-button">
+        <button class="hero-button-by" type="button" data-modal="buynow">
+          By now
+        </button>
         <a href="#made" class="hero-button-made">How it’s made</a>
-        <a href="#footer" class="hero-button-scroll">Scroll down
-            <span class="scrol">
+        <a href="#footer" class="hero-button-scroll"
+          >Scroll down
+          <span class="scrol">
             <svg class="svg-scroll" width="22" height="22">
-            <use  href="/project-group-1/assets/icons-819c5e69.svg#icon-scroll"></use>
-        </svg>
-        </span>
+              <use href="/project-group-1/assets/icons-819c5e69.svg#icon-scroll"></use>
+            </svg>
+          </span>
         </a>
-        </div>
+      </div>
     </div>
-    </div>
+  </div>
 </section>
+
       <section class="adv-section">
   <div class="container adv-bg">
     <h2 class="hidden">Our Advantages</h2>
@@ -881,153 +887,165 @@
 
     <!-- Modals -->
     <!--Modal buynow-->
-<div class="buynow-modal">
-  <button type="button" class="buynow-modal-close button">
-    <svg class="buynow-modal-icon">
-      <use href="/project-group-1/assets/icons-819c5e69.svg#icon-close"></use>
-    </svg>
-  </button>
-  <h2 class="section-name">bay <span class="section-name-accent">now</span></h2>
-  <ul class="buynow-img list">
-    <li class="buynow-img-item">
-      <picture>
-        <source
-          srcset="/project-group-1/assets/dark-1x-c074bd0b.png 1x, /project-group-1/assets/dark-2x-13ea83fa.png 2x"
-          media="(max-width: 767px)"
-        />
-        <source
-          srcset="/project-group-1/assets/dark-1x-74df8898.png 1x, /project-group-1/assets/dark-2x-3d5f87cc.png 2x"
-          media="(min-width: 1200px)"
-        />
-        <img
-          class="buy-now-img"
-          src="/project-group-1/assets/dark-1x-c074bd0b.png"
-          alt="two pieces of dark chocolate with dark chocolate chips"
-        />
-      </picture>
-      <div class="buynow-weight">100 g</div>
-    </li>
-    <li class="buynow-img-item">
-      <picture>
-        <source
-          srcset="/project-group-1/assets/pyramid-1x-4bdf837a.png 1x, /project-group-1/assets/pyramid-2x-489f7332.png 2x"
-          media="(max-width: 767px)"
-        />
-        <source
-          srcset="/project-group-1/assets/pyramid-1x-45c01f36.png 1x, /project-group-1/assets/pyramid-2x-1709ff90.png 2x"
-          media="(min-width: 1200px)"
-        />
-        <img
-          class="buy-now-img"
-          src="/project-group-1/assets/pyramid-1x-4bdf837a.png"
-          alt="a pyramid of alternating five pieces of white and black chocolate with nuts"
-        />
-      </picture>
-      <div class="buynow-weight">200 g</div>
-    </li>
-    <li class="buynow-img-item">
-      <picture>
-        <source
-          srcset="/project-group-1/assets/stick-1x-dfa055f3.png 1x, /project-group-1/assets/stick-2x-eedb5d85.png 2x"
-          media="(max-width: 767px)"
-        />
-        <source
-          srcset="/project-group-1/assets/stick-1x-bd6e94d3.png 1x, /project-group-1/assets/stick-2x-038efe05.png 2x"
-          media="(min-width: 1200px)"
-        />
-        <img
-          class="buy-now-img"
-          src="/project-group-1/assets/stick-1x-dfa055f3.png"
-          alt="bar of dark and milk chocolate, part of which has been rubbed into chocolate chips"
-        />
-      </picture>
-      <div class="buynow-weight">300 g</div>
-    </li>
-  </ul>
-  <form class="buynow-personal-data-form">
-    <div class="buynow-common-name">
-      <div class="buynow-personal-data">
-        <label for="name" class="buynow-personal-item"
-          >Personal information</label
-        >
-        <input
-          type="text"
-          class="buynow-form-input"
-          name="name"
-          id="name"
-          autofocus
-          required
-          placeholder="Name"
-        />
-      </div>
-      <div class="buynow-personal-data">
-        <input
-          type="text"
-          class="buynow-form-input"
-          name="surname"
-          id="surname"
-          required
-          placeholder="Surname"
-        />
-      </div>
-    </div>
-    <div class="buynow-personal-data">
-      <label for="mail" class="buynow-personal-item">Email</label>
-      <input
-        type="email"
-        class="buynow-form-input"
-        name="mail"
-        id="mail"
-        required
-        placeholder="Enter your email"
-      />
-    </div>
-    <div class="buynow-personal-data phone">
-      <label for="tel" class="buynow-personal-item">Phone number</label>
-      <input
-        type="text"
-        class="buynow-form-input phone"
-        name="tel"
-        id="tel"
-        pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
-        required
-        placeholder="Phone number"
-      />
-      <div class="buynow-flag">
-        <svg class="buynow-icon-flag">
-          <use href="/project-group-1/assets/icon-svg-color-2c63d07b.svg#icon-flag"></use>
+<div class="backdrop-modal is-hidden" id="buynow">
+  <div class="modal-wrap">
+    <div class="buynow-modal">
+      <button
+        type="button"
+        class="buynow-modal-close button"
+        data-modal="buynow"
+      >
+        <svg class="buynow-modal-icon">
+          <use href="/project-group-1/assets/icons-819c5e69.svg#icon-close"></use>
         </svg>
-        <div class="buynow-tel-ukr">+380</div>
-      </div>
+      </button>
+      <h2 class="section-name">
+        bay <span class="section-name-accent">now</span>
+      </h2>
+      <ul class="buynow-img list">
+        <li class="buynow-img-item">
+          <picture>
+            <source
+              srcset="/project-group-1/assets/dark-1x-c074bd0b.png 1x, /project-group-1/assets/dark-2x-13ea83fa.png 2x"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="/project-group-1/assets/dark-1x-74df8898.png 1x, /project-group-1/assets/dark-2x-3d5f87cc.png 2x"
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="buy-now-img"
+              src="/project-group-1/assets/dark-1x-c074bd0b.png"
+              alt="two pieces of dark chocolate with dark chocolate chips"
+            />
+          </picture>
+          <div class="buynow-weight">100 g</div>
+        </li>
+        <li class="buynow-img-item">
+          <picture>
+            <source
+              srcset="/project-group-1/assets/pyramid-1x-4bdf837a.png 1x, /project-group-1/assets/pyramid-2x-489f7332.png 2x"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="/project-group-1/assets/pyramid-1x-45c01f36.png 1x, /project-group-1/assets/pyramid-2x-1709ff90.png 2x"
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="buy-now-img"
+              src="/project-group-1/assets/pyramid-1x-4bdf837a.png"
+              alt="a pyramid of alternating five pieces of white and black chocolate with nuts"
+            />
+          </picture>
+          <div class="buynow-weight">200 g</div>
+        </li>
+        <li class="buynow-img-item">
+          <picture>
+            <source
+              srcset="/project-group-1/assets/stick-1x-dfa055f3.png 1x, /project-group-1/assets/stick-2x-eedb5d85.png 2x"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="/project-group-1/assets/stick-1x-bd6e94d3.png 1x, /project-group-1/assets/stick-2x-038efe05.png 2x"
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="buy-now-img"
+              src="/project-group-1/assets/stick-1x-dfa055f3.png"
+              alt="bar of dark and milk chocolate, part of which has been rubbed into chocolate chips"
+            />
+          </picture>
+          <div class="buynow-weight">300 g</div>
+        </li>
+      </ul>
+      <form class="buynow-personal-data-form">
+        <div class="buynow-common-name">
+          <div class="buynow-personal-data">
+            <label for="name" class="buynow-personal-item"
+              >Personal information</label
+            >
+            <input
+              type="text"
+              class="buynow-form-input"
+              name="name"
+              id="name"
+              autofocus
+              required
+              placeholder="Name"
+            />
+          </div>
+          <div class="buynow-personal-data">
+            <input
+              type="text"
+              class="buynow-form-input"
+              name="surname"
+              id="surname"
+              required
+              placeholder="Surname"
+            />
+          </div>
+        </div>
+        <div class="buynow-personal-data">
+          <label for="mail" class="buynow-personal-item">Email</label>
+          <input
+            type="email"
+            class="buynow-form-input"
+            name="mail"
+            id="mail"
+            required
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="buynow-personal-data phone">
+          <label for="tel" class="buynow-personal-item">Phone number</label>
+          <input
+            type="text"
+            class="buynow-form-input phone"
+            name="tel"
+            id="tel"
+            pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+            required
+            placeholder="Phone number"
+          />
+          <div class="buynow-flag">
+            <svg class="buynow-icon-flag">
+              <use href="/project-group-1/assets/icon-svg-color-2c63d07b.svg#icon-flag"></use>
+            </svg>
+            <div class="buynow-tel-ukr">+380</div>
+          </div>
+        </div>
+        <div class="buynow-personal-data card">
+          <label for="card-number" class="buynow-personal-item"
+            >Card number</label
+          >
+          <input
+            type="number"
+            class="buynow-form-input"
+            name="card-number"
+            id="card-number"
+            placeholder="Enter card"
+            required
+          />
+          <div class="buynow-card">
+            <svg class="buynow-icon">
+              <use href="/project-group-1/assets/icon-svg-color-2c63d07b.svg#icon-mastercard"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="buynow-personal-data">
+          <label for="comment" class="buynow-personal-item">Comment</label>
+          <textarea
+            name="comment"
+            class="buynow-form-input comment"
+            id="comment"
+            rows="3"
+            placeholder="Enter text"
+          ></textarea>
+        </div>
+        <button type="submit" class="buynow-submit button">Submit</button>
+      </form>
     </div>
-    <div class="buynow-personal-data card">
-      <label for="card-number" class="buynow-personal-item">Card number</label>
-      <input
-        type="number"
-        class="buynow-form-input"
-        name="card-number"
-        id="card-number"
-        placeholder="Enter card"
-        required
-      />
-      <div class="buynow-card">
-        <svg class="buynow-icon">
-          <use href="/project-group-1/assets/icon-svg-color-2c63d07b.svg#icon-mastercard"></use>
-        </svg>
-      </div>
-    </div>
-    <div class="buynow-personal-data">
-      <label for="comment" class="buynow-personal-item">Comment</label>
-      <textarea
-        name="comment"
-        class="buynow-form-input comment"
-        id="comment"
-        rows="3"
-        placeholder="Enter text"
-      ></textarea>
-    </div>
-    <button type="submit" class="buynow-submit button">Submit</button>
-  </form>
+  </div>
 </div>
 
     <div class="leaverev-backdrop is-hidden" id="leaverev">
@@ -1066,45 +1084,47 @@
 </div>
 
     <div class="backdrop-modal is-hidden" id="exnew">
-  <div class="exnew-modal">
-    <picture>
-      <source
-        srcset="/project-group-1/assets/piece-of-chocolate-1x-91ffaf73.jpg 1x, /project-group-1/assets/piece-of-chocolate-2x-ffb6de54.jpg 2x"
-        media="(max-width: 767px)"
-      />
-      <source
-        srcset="/project-group-1/assets/piece-of-chocolate-1x-99dd9415.jpg 1x, /project-group-1/assets/piece-of-chocolate-2x-722e405a.jpg 2x"
-        media="(min-width: 768px)"
-      />
-      <img
-        src="/project-group-1/assets/piece-of-chocolate-1x-99dd9415.jpg"
-        alt="pieces of chocolate"
-        class="exnew-modal-img"
-      />
-    </picture>
-    <button type="button" class="exnew-modal-close" data-modal="exnew">
-      <svg class="exnew-modal-icon" width="24" height="24">
-        <use href="/project-group-1/assets/icons-819c5e69.svg#icon-close"></use>
-      </svg>
-    </button>
-    <div class="exnew-modal-text">
-      <h2 class="section-name exnew-title">
-        Explore our
-        <span class="section-name-accent"><br />new chocolate</span>
-        first!
-      </h2>
-      <form class="exnew-modal-form">
-        <label class="exnew-modal-lable">
-          <input
-            type="email"
-            class="exnew-form-input"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
-        </label>
-        <button type="submit" class="exnew-modal-submit">Submit</button>
-      </form>
+  <div class="modal-wrap">
+    <div class="exnew-modal">
+      <picture>
+        <source
+          srcset="/project-group-1/assets/piece-of-chocolate-1x-91ffaf73.jpg 1x, /project-group-1/assets/piece-of-chocolate-2x-ffb6de54.jpg 2x"
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="/project-group-1/assets/piece-of-chocolate-1x-99dd9415.jpg 1x, /project-group-1/assets/piece-of-chocolate-2x-722e405a.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <img
+          src="/project-group-1/assets/piece-of-chocolate-1x-99dd9415.jpg"
+          alt="pieces of chocolate"
+          class="exnew-modal-img"
+        />
+      </picture>
+      <button type="button" class="exnew-modal-close" data-modal="exnew">
+        <svg class="exnew-modal-icon" width="24" height="24">
+          <use href="/project-group-1/assets/icons-819c5e69.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="exnew-modal-text">
+        <h2 class="section-name exnew-title">
+          Explore our
+          <span class="section-name-accent"><br />new chocolate</span>
+          first!
+        </h2>
+        <form class="exnew-modal-form">
+          <label class="exnew-modal-lable">
+            <input
+              type="email"
+              class="exnew-form-input"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </label>
+          <button type="submit" class="exnew-modal-submit">Submit</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
