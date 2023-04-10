@@ -1,3 +1,5 @@
+/* Hidden Title */
+
 .hidden {
   position: absolute;
   white-space: nowrap;
@@ -11,20 +13,24 @@
   margin: -1px;
 }
 
+/* Обгортка */
+
 .adv-section {
   background-color: var(--dark-purple);
 }
 
-.adv-bg {
+.adv-section .container {
   padding-top: 20px;
   padding-bottom: 36px;
 }
 
 @media (min-width: 768px) {
-  .adv-bg {
+  .adv-section .container {
     padding: 50px 32px 85px 32px;
   }
 }
+
+/* UL */
 
 @media (min-width: 768px) {
   .adv-list {
@@ -42,6 +48,8 @@
     gap: 88px;
   }
 }
+
+/* Li */
 
 .adv-list-item:nth-child(1) {
   margin-bottom: 38px;
@@ -78,6 +86,8 @@
   }
 }
 
+/* Icons */
+
 .adv-icon-container {
   display: flex;
   align-items: center;
@@ -92,6 +102,8 @@
 .adv-icon {
   fill: var(--orange);
 }
+
+/* Text */
 
 .adv-list-item > h3 {
   font-family: 'Montserrat';
