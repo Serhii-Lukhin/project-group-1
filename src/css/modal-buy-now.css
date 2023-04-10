@@ -1,6 +1,6 @@
 /* Modal window*/
 .buynow-modal {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -104,13 +104,19 @@
   line-height: 1.214;
   color: rgba(64, 64, 64, 0.3);
   padding: 14px 18px;
+  transition: border-color var(--orange);
+}
+
+.buynow-form-input:focus {
+  border-color: var(--orange);
 }
 .buynow-form-input.phone {
-  padding-left: 106px;
   padding: 10px 18px;
+  padding-left: 106px;
 }
 .buynow-form-input.comment {
   height: 91px;
+  resize: none;
 }
 .buynow-flag {
   position: absolute;
@@ -222,9 +228,12 @@
     line-height: 1.22;
     padding: 22px 24px;
   }
+  .buynow-form-input:hover {
+    border-color: var(--orange);
+  }
   .buynow-form-input.phone {
-    padding-left: 106px;
     padding: 17px 24px;
+    padding-left: 177px;
   }
   .buynow-form-input.comment {
     height: 137px;
