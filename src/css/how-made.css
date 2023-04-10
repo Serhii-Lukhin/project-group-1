@@ -2,14 +2,6 @@
   padding-bottom: 72px;
 }
 
-.made .section-name {
-  margin-bottom: 32px;
-}
-
-.orange-title {
-  color: var(--orange);
-}
-
 .video-block {
   display: block;
   position: relative;
