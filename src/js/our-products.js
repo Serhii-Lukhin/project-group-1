@@ -1,18 +1,23 @@
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-
-  // If we need pagination
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 18,
   pagination: {
     el: '.swiper-pagination',
-    clickable: true
+    clickable: true,
   },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 640px
+    1200: {
+      slidesPerView: 4,
+    },
   },
-
 });

@@ -1,0 +1,110 @@
+.section-sub {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/subscribe/mobile/subcribe-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 62px;
+  padding-bottom: 63px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-sub {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/subscribe/mobile/subcribe-2x.jpg);
+  }
+}
+.sub-title {
+  max-width: 291px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+.sub-desc {
+  max-width: 326px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+.sub-button {
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--orange);
+  display: block;
+  margin: 0 auto;
+  border-radius: 100px;
+  padding: 12px 28px;
+  border: none;
+  transition: color var(--basic-transition),
+    background-color var(--basic-transition);
+}
+.sub-button:is(:hover, :focus) {
+  background-color: #fcf1e0;
+  color: var(--orange);
+}
+
+@media screen and (min-width: 768px) {
+  .section-sub {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/subscribe/tablet/subcribe-1x.jpg);
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-sub {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/subscribe/tablet/subcribe-2x.jpg);
+    }
+  }
+  .sub-title {
+    max-width: 378px;
+  }
+  .sub-desc {
+    max-width: 467px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-sub {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/subscribe/desktop/subcribe-1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-sub {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/subscribe/desktop/subcribe-2x.jpg);
+    }
+  }
+}

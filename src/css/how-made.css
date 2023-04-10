@@ -1,0 +1,158 @@
+.made {
+  padding-bottom: 72px;
+}
+
+.video-block {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.made-video {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-top: 79%;
+  padding-bottom: 56.25%;
+  border-radius: 15px;
+}
+
+.made-video iframe,
+.made-video object,
+.made-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.made-cover {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
+}
+.made-cover::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-image: url('../img/play.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.made-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.list-wrap {
+  padding: 20px 14px;
+  background-color: var(--white-header);
+  border-radius: 15px;
+}
+
+.made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-bottom: 20px;
+}
+
+.made-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  list-style: unset;
+  padding-left: 16px;
+}
+
+@media screen and (min-width: 375px) {
+  .made-video {
+    padding-top: 93%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .made .section-name {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .made {
+    padding-bottom: 100px;
+  }
+
+  .made > .container {
+    width: 646px;
+  }
+
+  .made .section-name {
+    margin-bottom: 50px;
+  }
+
+  .made-video {
+    padding-top: 8.897%;
+    padding-bottom: 56.25%;
+  }
+
+  .list-wrap {
+    padding: 32px;
+  }
+
+  .made-subtitle {
+    max-width: 350px;
+    margin-bottom: 28px;
+  }
+
+  .made-list {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .made {
+    padding-bottom: 128px;
+  }
+
+  .made > .container {
+    width: 1168px;
+  }
+
+  .made-wrap {
+    display: flex;
+    gap: 20px;
+  }
+
+  .video-block {
+    width: 600px;
+    margin-bottom: 0;
+  }
+
+  .made-video {
+    padding-top: 10.4%;
+    padding-bottom: 56.25%;
+  }
+
+  .made-list {
+    max-width: 452px;
+    gap: 24px;
+  }
+
+  .made-item:nth-child(n + 2) {
+    max-width: 425px;
+  }
+}

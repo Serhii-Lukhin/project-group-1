@@ -1,0 +1,111 @@
+.exnew-modal {
+  position: absolute;
+  width: 311px;
+  height: 350px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transition: transform var(--basic-transition) 0.1s,
+    opacity var(--basic-transition) 0.1s;
+  border-radius: 15px;
+}
+.backdrop-modal.is-hidden .exnew-modal {
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
+}
+.exnew-modal-img {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.exnew-modal-close {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: transparent;
+  top: 15px;
+  right: 15px;
+  border: 0;
+  color: #fff;
+}
+
+.exnew-modal-icon {
+  stroke: currentColor;
+  stroke-width: 2px;
+  pointer-events: none;
+}
+
+.exnew-modal-text {
+  padding: 32px 24px;
+  position: relative;
+}
+.exnew-title {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.exnew-form-input {
+  border-radius: 20px;
+  width: 100%;
+  height: 45px;
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  color: #fff;
+  padding: 0 0 0 14px;
+}
+.exnew-form-input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(46, 47, 66, 0.2);
+}
+.exnew-modal-submit {
+  font-weight: 600;
+  line-height: 1.22;
+  width: 100px;
+  height: 45px;
+  border-radius: 100px;
+  background-color: var(--orange);
+  color: #fff;
+  border: none;
+  position: absolute;
+  right: 24px;
+  bottom: 32px;
+  padding: 0;
+  transition: background-color var(--basic-transition),
+    color var(--basic-transition);
+}
+
+.exnew-modal-submit:hover,
+.exnew-modal-submit:focus {
+  background-color: #fcf1e0;
+  color: var(--orange);
+}
+@media screen and (min-width: 768px) {
+  .exnew-modal {
+    width: 538px;
+    height: 412px;
+  }
+  .exnew-modal-icon {
+    stroke-width: 14px;
+  }
+  .exnew-title {
+    max-width: 298px;
+    margin-bottom: 28px;
+  }
+  .exnew-modal-text {
+    padding: 40px;
+    position: relative;
+  }
+  .exnew-modal-form {
+    display: flex;
+  }
+  .exnew-form-input {
+    width: 313px;
+    height: 52px;
+  }
+  .exnew-modal-submit {
+    width: 137px;
+    height: 52px;
+    position: static;
+    margin-left: 8px;
+  }
+}

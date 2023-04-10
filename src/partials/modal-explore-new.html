@@ -1,1 +1,49 @@
-Explore our new chocolate first class="exnew-"
+<div class="backdrop-modal is-hidden" id="exnew">
+  <div class="exnew-modal">
+    <picture>
+      <source
+        srcset="
+          ./img/explore-our-chocolate/mobile/piece-of-chocolate-1x.jpg 1x,
+          ./img/explore-our-chocolate/mobile/piece-of-chocolate-2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="
+          ./img/explore-our-chocolate/desktop-tablet/piece-of-chocolate-1x.jpg 1x,
+          ./img/explore-our-chocolate/desktop-tablet/piece-of-chocolate-2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        src="./img/explore-our-chocolate/desktop-tablet/piece-of-chocolate-1x.jpg"
+        alt="pieces of chocolate"
+        class="exnew-modal-img"
+      />
+    </picture>
+    <button type="button" class="exnew-modal-close" data-modal="exnew">
+      <svg class="exnew-modal-icon" width="24" height="24">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="exnew-modal-text">
+      <h2 class="section-name exnew-title">
+        Explore our
+        <span class="section-name-accent"><br />new chocolate</span>
+        first!
+      </h2>
+      <form class="exnew-modal-form">
+        <label class="exnew-modal-lable">
+          <input
+            type="email"
+            class="exnew-form-input"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <button type="submit" class="exnew-modal-submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
