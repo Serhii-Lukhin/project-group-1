@@ -18,6 +18,7 @@
   --white: #fafafa;
   --white-header: #ffffff;
   --basic-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --hover-button-color: #FCF1E0;
 }
 
 body {
