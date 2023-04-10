@@ -57,6 +57,7 @@ letter-spacing: -0.03em;
 .hero-button-by {
     background-color: var(--orange);
     color: var(--white);
+    font-weight: 600;
     width: 120px;
     height: 41px;
     border: none;
@@ -75,6 +76,7 @@ letter-spacing: -0.03em;
     align-items: center;
     background-color: transparent;
     color: var(--white);
+    font-weight: 600;
     width: 159px;
     height: 41px;
     border: 1px solid var(--white);
@@ -91,6 +93,7 @@ letter-spacing: -0.03em;
     display: flex;
     align-items: center;
     background-color: transparent;
+    font-weight: 500;
         color: var(--white);
         border: none;
         transition: color var(--basic-transition);
@@ -134,6 +137,7 @@ letter-spacing: -0.03em;
         padding-bottom: 50px;
     }
     .hero-container{
+        padding-top: 671px;
         padding-left: 40px;
         padding-right: 40px;
         padding-bottom: 40px;
@@ -167,6 +171,7 @@ letter-spacing: -0.03em;
         padding-bottom: 72px;
     }
     .hero-container {
+        padding-top: 381px;
          background-image: url("../img/hero/desktop/chocolate-desktop-1x.jpg");
     }
         @media (min-device-pixel-ratio: 2),
