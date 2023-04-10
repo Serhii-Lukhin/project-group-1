@@ -38,6 +38,7 @@
 .exnew-modal-text {
   padding: 32px 24px;
   position: relative;
+  background-color: var(--white);
 }
 .exnew-title {
   margin-bottom: 24px;
@@ -51,11 +52,19 @@
   border: 1px solid rgba(46, 47, 66, 0.2);
   color: #fff;
   padding: 0 0 0 14px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color var(--basic-transition);
+}
+
+.exnew-form-input:focus{
+  border-color: var(--orange);
 }
 .exnew-form-input::placeholder {
   font-family: 'Montserrat', sans-serif;
   color: rgba(46, 47, 66, 0.2);
 }
+
 .exnew-modal-submit {
   font-family: inherit;
   width: 100px;
@@ -99,6 +108,11 @@
     width: 313px;
     height: 52px;
   }
+  .exnew-form-input:hover,
+  .exnew-form-input:focus {
+    border-color: var(--orange);
+  }
+
   .exnew-modal-submit {
     width: 137px;
     height: 52px;
