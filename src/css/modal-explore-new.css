@@ -24,11 +24,15 @@
   border: 0;
   color: #fff;
 }
+.exnew-modal-close:active .exnew-modal-icon {
+  stroke: var(--orange);
+}
 
 .exnew-modal-icon {
   stroke: currentColor;
   stroke-width: 2px;
   pointer-events: none;
+  transition: stroke var(--basic-transition);
 }
 
 .exnew-modal-text {
@@ -102,5 +106,11 @@
     height: 52px;
     position: static;
     margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .exnew-modal-close:is(:hover, :focus) .exnew-modal-icon {
+    stroke: var(--orange);
   }
 }
