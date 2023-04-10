@@ -38,7 +38,6 @@
   color: #ffffff;
 }
 .sub-button {
-  font-style: normal;
   font-weight: 600;
   color: #ffffff;
   background-color: var(--orange);
@@ -83,6 +82,11 @@
   }
   .sub-desc {
     max-width: 467px;
+  }
+  .sub-button {
+    padding: 14px 40px;
+    font-size: 18px;
+    line-height: 1.22;
   }
 }
 

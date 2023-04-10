@@ -1,16 +1,21 @@
-/* Modal window*/
 .buynow-modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   width: 311px;
-  height: 994px;
-
+  max-height: 994px;
   background-color: var(--white);
   padding: 32px 24px;
   border-radius: 15px;
+  margin: auto;
+  transform: scale(1);
+  opacity: 1;
+  transition: transform var(--basic-transition) 0.1s,
+    opacity var(--basic-transition) 0.1s;
 }
+.backdrop-modal.is-hidden .buynow-modal {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
 .buynow-modal-close.button {
   position: absolute;
   right: 20px;
@@ -24,11 +29,16 @@
   padding: 0;
   cursor: pointer;
 }
+.buynow-modal-close.button:active .buynow-modal-icon {
+  stroke: var(--orange);
+}
 .buynow-modal-icon {
   width: 24px;
   height: 24px;
   stroke: var(--black);
   stroke-width: 2px;
+  pointer-events: none;
+  transition: stroke var(--basic-transition);
 }
 
 .buynow-img.list {
@@ -172,9 +182,6 @@
 @media screen and (min-width: 375px) {
 }
 @media screen and (min-width: 768px) {
-  .container {
-    width: 736px;
-  }
   /* Modal window*/
   .buynow-modal {
     width: 609px;
@@ -278,10 +285,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 1168px;
+  .buynow-modal-close.button:is(:hover, :focus) .buynow-modal-icon {
+    stroke: var(--orange);
   }
-  /* Modal window*/
-
-  /* Submit button*/
 }
