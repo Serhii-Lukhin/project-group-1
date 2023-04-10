@@ -5,8 +5,8 @@
       <use href="../img/icons.svg#icon-close"></use>
     </svg>
   </button>
-  <h2 class="section-name-buynow">
-    buy <span class="section-name-buynow-second">now</span>
+  <h2 class="section-name-accent buynow">
+    bay <span class="section-name">now</span>
   </h2>
   <ul class="buynow-img list">
     <li class="buynow-img-item">
@@ -75,16 +75,22 @@
         placeholder="Enter your email"
       />
     </div>
-    <div class="buynow-personal-data">
+    <div class="buynow-personal-data phone">
       <label for="tel" class="buynow-personal-item">Phone number</label>
       <input
         type="text"
-        class="buynow-form-input"
+        class="buynow-form-input phone"
         name="tel"
         id="tel"
         pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
         required
       />
+      <div class="buynow-flag">
+        <svg class="buynow-icon-flag">
+          <use href="../img/icon-svg-color.svg#icon-flag"></use>
+        </svg>
+        <div class="buynow-tel-ukr">+380</div>
+      </div>
     </div>
     <div class="buynow-personal-data card">
       <label for="card-number" class="buynow-personal-item">Card number</label>
@@ -102,12 +108,11 @@
         </svg>
       </div>
     </div>
-    <div class="buynow-personal-data"></div>
     <div class="buynow-personal-data">
       <label for="comment" class="buynow-personal-item">Comment</label>
       <textarea
         name="comment"
-        class="buynow-form-input"
+        class="buynow-form-input comment"
         id="comment"
         rows="3"
         placeholder="Enter text"
