@@ -42,6 +42,7 @@ body {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   margin-bottom: 32px;
+
 }
 .section-name-accent {
   color: var(--orange);

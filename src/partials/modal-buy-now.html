@@ -1,2 +1,166 @@
-Buy now
-class="buynow-"
+<!--Modal buynow-->
+<div class="buynow-modal">
+  <button type="button" class="buynow-modal-close button">
+    <svg class="buynow-modal-icon">
+      <use href="./img/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="section-name">bay <span class="section-name-accent">now</span></h2>
+  <ul class="buynow-img list">
+    <li class="buynow-img-item">
+      <picture>
+        <source
+          srcset="
+            ./img/buy-now/mobile/dark-1x.png 1x,
+            ./img/buy-now/mobile/dark-2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./img/buy-now/desktop-tablet/dark-1x.png 1x,
+            ./img/buy-now/desktop-tablet/dark-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="buy-now-img"
+          src="./img/buy-now/mobile/dark-1x.png"
+          alt="two pieces of dark chocolate with dark chocolate chips"
+        />
+      </picture>
+      <div class="buynow-weight">100 g</div>
+    </li>
+    <li class="buynow-img-item">
+      <picture>
+        <source
+          srcset="
+            ./img/buy-now/mobile/pyramid-1x.png 1x,
+            ./img/buy-now/mobile/pyramid-2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./img/buy-now/desktop-tablet/pyramid-1x.png 1x,
+            ./img/buy-now/desktop-tablet/pyramid-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="buy-now-img"
+          src="./img/buy-now/mobile/pyramid-1x.png"
+          alt="a pyramid of alternating five pieces of white and black chocolate with nuts"
+        />
+      </picture>
+      <div class="buynow-weight">200 g</div>
+    </li>
+    <li class="buynow-img-item">
+      <picture>
+        <source
+          srcset="
+            ./img/buy-now/mobile/stick-1x.png 1x,
+            ./img/buy-now/mobile/stick-2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./img/buy-now/desktop-tablet/stick-1x.png 1x,
+            ./img/buy-now/desktop-tablet/stick-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="buy-now-img"
+          src="./img/buy-now/mobile/stick-1x.png"
+          alt="bar of dark and milk chocolate, part of which has been rubbed into chocolate chips"
+        />
+      </picture>
+      <div class="buynow-weight">300 g</div>
+    </li>
+  </ul>
+  <form class="buynow-personal-data-form">
+    <div class="buynow-common-name">
+      <div class="buynow-personal-data">
+        <label for="name" class="buynow-personal-item"
+          >Personal information</label
+        >
+        <input
+          type="text"
+          class="buynow-form-input"
+          name="name"
+          id="name"
+          autofocus
+          required
+          placeholder="Name"
+        />
+      </div>
+      <div class="buynow-personal-data">
+        <input
+          type="text"
+          class="buynow-form-input"
+          name="surname"
+          id="surname"
+          required
+          placeholder="Surname"
+        />
+      </div>
+    </div>
+    <div class="buynow-personal-data">
+      <label for="mail" class="buynow-personal-item">Email</label>
+      <input
+        type="email"
+        class="buynow-form-input"
+        name="mail"
+        id="mail"
+        required
+        placeholder="Enter your email"
+      />
+    </div>
+    <div class="buynow-personal-data phone">
+      <label for="tel" class="buynow-personal-item">Phone number</label>
+      <input
+        type="text"
+        class="buynow-form-input phone"
+        name="tel"
+        id="tel"
+        pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+        required
+      />
+      <div class="buynow-flag">
+        <svg class="buynow-icon-flag">
+          <use href="./img/icon-svg-color.svg#icon-flag"></use>
+        </svg>
+        <div class="buynow-tel-ukr">+380</div>
+      </div>
+    </div>
+    <div class="buynow-personal-data card">
+      <label for="card-number" class="buynow-personal-item">Card number</label>
+      <input
+        type="number"
+        class="buynow-form-input"
+        name="card-number"
+        id="card-number"
+        placeholder="Enter card"
+        required
+      />
+      <div class="buynow-card">
+        <svg class="buynow-icon">
+          <use href="./img/icon-svg-color.svg#icon-mastercard"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="buynow-personal-data">
+      <label for="comment" class="buynow-personal-item">Comment</label>
+      <textarea
+        name="comment"
+        class="buynow-form-input comment"
+        id="comment"
+        rows="3"
+        placeholder="Enter text"
+      ></textarea>
+    </div>
+    <button type="submit" class="buynow-submit button">Submit</button>
+  </form>
+</div>
