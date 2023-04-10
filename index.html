@@ -10,8 +10,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <script type="module" crossorigin src="/project-group-1/assets/index-1caa53e6.js"></script>
-    <link rel="stylesheet" href="/project-group-1/assets/index-cd0d753e.css">
+    <script type="module" crossorigin src="/project-group-1/assets/index-961e7a8f.js"></script>
+    <link rel="stylesheet" href="/project-group-1/assets/index-5c0fc784.css">
   </head>
   <body>
     <header class="header-" id="header">
@@ -640,7 +640,7 @@
         </svg>
       </button>
     </div>
-    <button type="button" class="review-button">Leave a review</button>
+    <button type="button" class="btn review-button">Leave a review</button>
   </div>
 </section>
 
@@ -654,7 +654,9 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
-    <button class="sub-button" type="button">Subscribe</button>
+    <button class="sub-button" type="button" data-modal="exnew">
+      Subscribe
+    </button>
   </div>
 </section>
 
@@ -731,7 +733,7 @@
 class="buynow-"
     Leave a review about our chocolate class="leaverev-"
 
-    <div class="exnew-backdrop">
+    <div class="backdrop-modal is-hidden" id="exnew">
   <div class="exnew-modal">
     <picture>
       <source
@@ -748,7 +750,7 @@ class="buynow-"
         class="exnew-modal-img"
       />
     </picture>
-    <button type="button" class="exnew-modal-close">
+    <button type="button" class="exnew-modal-close" data-modal="exnew">
       <svg class="exnew-modal-icon" width="24" height="24">
         <use href="/project-group-1/assets/icons-819c5e69.svg#icon-close"></use>
       </svg>
