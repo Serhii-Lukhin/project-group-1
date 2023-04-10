@@ -1,184 +1,169 @@
+/* Modal window*/
+.buynow-modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 311px;
+  height: 994px;
+
+  background-color: var(--white);
+  padding: 32px 24px;
+  border-radius: 15px;
+}
+.buynow-modal-close.button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  background: transparent;
+  border: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+.buynow-modal-icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--black);
+  stroke-width: 2px;
+}
+
+.buynow-img.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 32px;
+}
+
+.buynow-img-item {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding: 8px 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+.buy-now-img {
+  width: 84px;
+  height: 69px;
+}
+.buynow-weight {
+  background: var(--white);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  width: 70px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buynow-personal-data-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 18px;
+}
+.buynow-common-name {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+.buynow-personal-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+.buynow-personal-data.phone {
+  position: relative;
+}
+.buynow-personal-data.card {
+  position: relative;
+}
+.buynow-personal-item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  margin-bottom: 8px;
+}
+.buynow-form-input {
+  font-family: inherit;
+  width: 100%;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  outline: transparent;
+  background-color: transparent;
+
+  line-height: 1.214;
+  color: rgba(64, 64, 64, 0.3);
+  padding: 14px 18px;
+}
+.buynow-form-input.phone {
+  padding-left: 106px;
+  padding: 10px 18px;
+}
+.buynow-form-input.comment {
+  height: 91px;
+}
+.buynow-flag {
+  position: absolute;
+  left: 18px;
+  top: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 8px;
+
+  width: 74px;
+  height: 25px;
+  box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.buynow-icon-flag {
+  width: 24px;
+  height: 18px;
+}
+.buynow-tel-ukr {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.214;
+  display: flex;
+  align-items: center;
+}
+.buynow-icon {
+  position: absolute;
+  width: 32px;
+  height: 21px;
+  left: 217px;
+  top: 34px;
+}
+/* Submit button*/
+.buynow-submit.button {
+  font-family: inherit;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+  color: var(--white-header);
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 28px;
+  width: 109px;
+  height: 41px;
+
+  background-color: var(--orange);
+  border-radius: 100px;
+  border-color: transparent;
+}
 @media screen and (min-width: 375px) {
-  .container {
-    width: 367px;
-    margin: 0 auto;
-  }
-  /* Modal window*/
-  .buynow-modal {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 311px;
-    height: 994px;
-
-    background-color: var(--white);
-
-    padding: 32px 24px;
-    border-radius: 15px;
-    border: 1px solid var(--orange);
-  }
-  .buynow-modal-close.button {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--black);
-    background: transparent;
-    border: transparent;
-    padding: 0;
-    cursor: pointer;
-  }
-  .buynow-modal-icon {
-    width: 24px;
-    height: 24px;
-    stroke: var(--black);
-    stroke-width: 2px;
-  }
-
-  .section-name-accent.buynow {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    margin-bottom: 32px;
-  }
-  .buynow-img.list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 8px;
-    margin-bottom: 32px;
-  }
-
-  .buynow-img-item {
-    display: flex;
-    flex-direction: row;
-    background: #ffffff;
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 15px;
-    padding: 8px 16px;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .buy-now-img {
-    width: 84px;
-    height: 69px;
-  }
-  .buynow-weight {
-    background: var(--white);
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 100px;
-    width: 70px;
-    height: 29px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .buynow-personal-data-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    row-gap: 18px;
-  }
-  .buynow-common-name {
-    display: flex;
-    flex-direction: column;
-    row-gap: 14px;
-  }
-  .buynow-personal-data {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-  }
-  .buynow-personal-data.phone {
-    position: relative;
-  }
-  .buynow-personal-data.card {
-    position: relative;
-  }
-  .buynow-personal-item {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.17;
-    margin-bottom: 8px;
-  }
-  .buynow-form-input {
-    font-family: inherit;
-    width: 100%;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-    border-radius: 8px;
-    outline: transparent;
-    background-color: transparent;
-
-    line-height: 1.214;
-    color: rgba(64, 64, 64, 0.3);
-    padding: 14px 18px;
-  }
-  .buynow-form-input.phone {
-    padding-left: 106px;
-    padding: 10px 18px;
-  }
-  .buynow-form-input.comment {
-    height: 91px;
-  }
-  .buynow-flag {
-    position: absolute;
-    left: 18px;
-    top: 32px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    column-gap: 8px;
-
-    width: 74px;
-    height: 25px;
-    box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
-  }
-  .buynow-icon-flag {
-    width: 24px;
-    height: 18px;
-  }
-  .buynow-tel-ukr {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.214;
-    display: flex;
-    align-items: center;
-  }
-  .buynow-icon {
-    position: absolute;
-    width: 32px;
-    height: 21px;
-    left: 217px;
-    top: 34px;
-  }
-  /* Submit button*/
-  .buynow-submit.button {
-    font-family: inherit;
-    text-align: center;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.214;
-    color: var(--white-header);
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 12px 28px;
-    width: 109px;
-    height: 41px;
-
-    background-color: var(--orange);
-    border-radius: 100px;
-    border-color: transparent;
-  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -199,10 +184,7 @@
     width: 28px;
     height: 28px;
   }
-  .section-name-accent.buynow {
-    font-size: 24px;
-    line-height: 1.17;
-  }
+
   .buynow-img.list {
     flex-direction: row;
     row-gap: 0;
