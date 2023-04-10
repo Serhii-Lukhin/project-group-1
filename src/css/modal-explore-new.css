@@ -46,22 +46,26 @@
 }
 
 .exnew-form-input {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  color: #000000;
   border-radius: 20px;
   width: 100%;
   height: 45px;
   border: 1px solid rgba(46, 47, 66, 0.2);
-  color: #fff;
   padding: 0 0 0 14px;
   background-color: transparent;
   outline: transparent;
   transition: border-color var(--basic-transition);
 }
 
-.exnew-form-input:focus{
+.exnew-form-input:focus {
   border-color: var(--orange);
 }
 .exnew-form-input::placeholder {
-  font-family: 'Montserrat', sans-serif;
   color: rgba(46, 47, 66, 0.2);
 }
 
@@ -105,6 +109,7 @@
     display: flex;
   }
   .exnew-form-input {
+    font-size: 18px;
     width: 313px;
     height: 52px;
   }
