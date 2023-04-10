@@ -84,13 +84,6 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .made .section-name {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .made {
     padding-bottom: 100px;
@@ -98,10 +91,6 @@
 
   .made > .container {
     width: 646px;
-  }
-
-  .made .section-name {
-    margin-bottom: 50px;
   }
 
   .made-video {
