@@ -233,3 +233,6 @@ body {
   opacity: 0;
   pointer-events: none;
 }
+.scroll-stop {
+  overflow: hidden;
+}
