@@ -55,13 +55,13 @@
 }
 .modal-input {
   margin-bottom: 14px;
+  position: relative;
 }
 .modal-form-input {
   padding-left: 18px;
   width: 263px;
   height: 45px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
   background-color: transparent;
 }
@@ -73,4 +73,75 @@
   line-height: 17px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
+}
+
+.leaverev-icon-flag {
+  width: 24px;
+  height: 18px;
+}
+
+.input-flag {
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right: 1px solid rgba(64, 64, 64, 0.3);
+}
+.leaverev-tel-ukr {
+  margin-right: 8px;
+}
+
+.modal-form-input-tel {
+  padding-left: 92px;
+  width: 263px;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  background-color: transparent;
+}
+.modal-form-input-tel::placeholder {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+.modal-form-input-text {
+  padding-left: 18px;
+  padding-top: 14px;
+  width: 263px;
+  height: 91px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  background-color: transparent;
+  resize: none;
+}
+.modal-form-input-text::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+.leaverev-modal-form {
+  margin-bottom: 18px;
+}
+.leaverev-modal-btn {
+  width: 93px;
+  height: 41px;
+  background: #fd9222;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
 }
