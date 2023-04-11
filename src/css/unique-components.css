@@ -141,15 +141,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
-    row-gap: 32px;
   }
   .comp-item {
-    position: relative;
-    overflow: hidden;
-    width: 336px;
-    height: auto;
-    border-radius: 15px;
-    padding: 28px;
+    flex-basis: calc((100% - 32px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -168,5 +162,8 @@
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 19px;
+  }
+  .comp-item {
+    flex-basis: calc((100% - 57px) / 4);
   }
 }

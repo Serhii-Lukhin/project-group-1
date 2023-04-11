@@ -11,7 +11,7 @@
   overflow: hidden;
   margin: auto;
 }
-.leaverev-modal.is-hidden .exnew-modal {
+.backdrop-modal.is-hidden .leaverev-modal {
   transform: scale(0.9);
   opacity: 0;
 }
@@ -49,6 +49,7 @@
 .leaverev-modal-form {
   width: 100%;
 }
+
 @media screen and (min-width: 768px) {
   .leaverev-modal {
     width: 517px;
@@ -73,84 +74,9 @@
     height: 28px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .leaverev-modal-close-btn:is(:hover, :focus) .leaverev-modal-icon {
     stroke: var(--orange);
-  }
-}
-@media screen and (min-width: 768px) {
-  .leaverev-modal {
-    width: 517px;
-    height: 631px;
-  }
-  .leaverev-title {
-    min-width: 298px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.1666;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: #111111;
-    margin-bottom: 60px;
-  }
-  .modal-form-input,
-  .modal-form-input-tel {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    width: 437px;
-    height: 66px;
-    font-size: 18px;
-    line-height: 1.222;
-  }
-  .modal-form-input-tel {
-    padding-left: 170px;
-  }
-  .leaverev-modal-close-btn {
-    top: 24px;
-    right: 24px;
-  }
-  .leaverev-modal {
-    padding: 20px 40px 40px;
-  }
-  .modal-form-input-text {
-    width: 437px;
-    height: 137px;
-    font-size: 18px;
-    line-height: 1.222;
-  }
-  .modal-input {
-    margin-bottom: 19px;
-    font-size: 18px;
-    line-height: 1.222;
-  }
-  .modal-form-input::placeholder {
-    font-size: 18px;
-    line-height: 1.222;
-  }
-  .modal-form-input-tel::placeholder {
-    font-size: 18px;
-    line-height: 1.222;
-  }
-  .modal-form-input-text::placeholder {
-    font-size: 18px;
-    line-height: 1.222;
-  }
-  .leaverev-tel-ukr {
-    font-family: 'Montserrat';
-    font-size: 18px;
-    line-height: 1.222;
-    margin-right: 32px;
-  }
-  .leaverev-icon-flag {
-    width: 32px;
-    height: 32px;
-    margin-right: 18px;
-  }
-  .leaverev-modal-btn {
-    width: 117px;
-    height: 45px;
   }
 }
