@@ -31,6 +31,7 @@
   padding: 0;
   cursor: pointer;
 }
+
 .leaverev-backdrop.is-hidden .leaverev-modal {
   transform: translate(-50%, -50%) scale(0.9);
   opacity: 0;
@@ -40,6 +41,12 @@
   height: 24px;
   stroke: var(--black);
   stroke-width: 2px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: stroke;
+}
+.leaverev-modal-icon:is(:hover, :focus) {
+  stroke: #fd9222;
 }
 .leaverev-title {
   font-weight: 600;
@@ -144,4 +151,12 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background;
+}
+.leaverev-modal-btn:hover,
+.leaverev-modal-btn:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
 }
