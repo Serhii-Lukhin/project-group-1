@@ -1,162 +1,80 @@
-.leaverev-backdrop {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(46, 47, 66, 0.2);
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999;
-}
 .leaverev-modal {
+  position: relative;
   width: 311px;
-  min-height: 471px;
   padding: 32px 24px;
   background: #fafafa;
   border-radius: 15px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: scale(1);
+  opacity: 1;
+  transition: transform var(--basic-transition) 0.1s,
+    opacity var(--basic-transition) 0.1s;
+  overflow: hidden;
+  margin: auto;
 }
-.leaverev-modal-close-btn {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--black);
-  background: transparent;
-  border: transparent;
-  padding: 0;
-  cursor: pointer;
-}
-
-.leaverev-backdrop.is-hidden .leaverev-modal {
-  transform: translate(-50%, -50%) scale(0.9);
+.leaverev-modal.is-hidden .exnew-modal {
+  transform: scale(0.9);
   opacity: 0;
 }
+.leaverev-modal-close-btn {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: transparent;
+  top: 14px;
+  right: 14px;
+  border: 0;
+  color: var(--black);
+}
 .leaverev-modal-icon {
-  width: 24px;
-  height: 24px;
   stroke: var(--black);
   stroke-width: 2px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: stroke;
+  pointer-events: none;
+  transition: stroke var(--basic-transition);
 }
-.leaverev-modal-icon:is(:hover, :focus) {
-  stroke: #fd9222;
+.leaverev-modal-close-btn:active .leaverev-modal-icon {
+  stroke: var(--orange);
 }
 .leaverev-title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: #111111;
-  margin-bottom: 32px;
+  text-align: left;
 }
-.leaverev-title-span {
-  color: #fd9222;
+.leaverev-title-br {
+  display: block;
 }
-.modal-input {
+.leaverev-modal-item:not(:last-child) {
   margin-bottom: 14px;
-  position: relative;
 }
-.modal-form-input {
-  padding-left: 18px;
-  width: 263px;
-  height: 45px;
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
-  border-radius: 8px;
-  background-color: transparent;
-}
-.modal-form-input::placeholder {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
-}
-
-.leaverev-icon-flag {
-  width: 24px;
-  height: 18px;
-}
-
-.input-flag {
-  padding-left: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border-right: 1px solid rgba(64, 64, 64, 0.3);
-}
-.leaverev-tel-ukr {
-  margin-right: 8px;
-}
-
-.modal-form-input-tel {
-  padding-left: 92px;
-  width: 263px;
-  height: 45px;
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
-  border-radius: 8px;
-  background-color: transparent;
-}
-.modal-form-input-tel::placeholder {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
-}
-.modal-form-input-text {
-  padding-left: 18px;
-  padding-top: 14px;
-  width: 263px;
-  height: 91px;
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
-  border-radius: 8px;
-  background-color: transparent;
-  resize: none;
-}
-.modal-form-input-text::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
-}
-.leaverev-modal-form {
+.leaverev-modal-item:nth-child(4) {
   margin-bottom: 18px;
 }
-.leaverev-modal-btn {
-  width: 93px;
-  height: 41px;
-  background: #fd9222;
-  border-radius: 100px;
-  outline: none;
-  border: none;
-  color: #fff;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color, background;
+.leaverev-modal-form {
+  width: 100%;
 }
-.leaverev-modal-btn:hover,
-.leaverev-modal-btn:focus {
-  color: #fd9222;
-  background-color: #fcf1e0;
+@media screen and (min-width: 768px) {
+  .leaverev-modal {
+    width: 517px;
+    padding: 40px;
+  }
+  .leaverev-title {
+    width: 298px;
+    margin-bottom: 40px;
+  }
+  .leaverev-title-br {
+    display: inline;
+  }
+  .leaverev-modal-item:not(:last-child) {
+    margin-bottom: 19px;
+  }
+  .leaverev-modal-close-btn {
+    top: 24px;
+    right: 24px;
+  }
+  .leaverev-modal-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .leaverev-modal-close-btn:is(:hover, :focus) .leaverev-modal-icon {
+    stroke: var(--orange);
+  }
 }

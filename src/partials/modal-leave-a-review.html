@@ -1,56 +1,73 @@
-<div class="leaverev-backdrop" id="leaverev">
-  <div class="leaverev-modal">
-    <button type="button" class="leaverev-modal-close-btn">
-      <svg class="leaverev-modal-icon">
-        <use href="./img/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-    <p class="leaverev-title">
-      leave a review <br />about<span class="leaverev-title-span">
-        our chocolate</span
+<div class="backdrop-modal is-hidden" id="leaverev">
+  <div class="modal-wrap">
+    <div class="leaverev-modal">
+      <button
+        type="button"
+        class="leaverev-modal-close-btn"
+        data-modal="leaverev"
       >
-    </p>
-    <form class="leaverev-modal-form">
-      <div class="modal-input">
-        <input
-          type="text"
-          name="name"
-          id="name"
-          class="modal-form-input"
-          placeholder="Name"
-        />
-      </div>
-      <div class="modal-input">
-        <input
-          type="email"
-          name="email"
-          id="email"
-          class="modal-form-input"
-          placeholder="Enter your email"
-        />
-      </div>
-      <div class="modal-input">
-        <input
-          type="tel"
-          name="tel"
-          id="tel"
-          class="modal-form-input-tel"
-          placeholder="Phone number"
-        />
-        <div class="input-flag">
-          <svg class="leaverev-icon-flag">
-            <use href="./img/icon-svg-color.svg#icon-flag"></use>
-          </svg>
-          <div class="leaverev-tel-ukr">+380</div>
-        </div>
-      </div>
-      <textarea
-        class="modal-form-input-text"
-        name="comment"
-        placeholder="Enter text"
-        id="comment"
-      ></textarea>
-    </form>
-    <button type="button" class="leaverev-modal-btn">Send</button>
+        <svg class="leaverev-modal-icon" width="24" height="24">
+          <use href="./img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h2 class="section-name leaverev-title">
+        leave a review
+        <span class="leaverev-title-br"
+          >about <span class="section-name-accent"> our chocolate</span></span
+        >
+      </h2>
+      <form class="leaverev-modal-form">
+        <ul class="leaverev-modal-lis">
+          <li class="leaverev-modal-item">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-input"
+              placeholder="Name"
+            />
+          </li>
+          <li class="leaverev-modal-item">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-input"
+              placeholder="Enter your email"
+            />
+          </li>
+          <li class="leaverev-modal-item">
+            <div class="form-input-container">
+              <input
+                type="text"
+                class="form-input tel"
+                name="tel"
+                id="tel"
+                pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+                required
+                placeholder="Phone number"
+              />
+              <div class="form-tel-container">
+                <svg class="form-icon-flag" width="24" height="24">
+                  <use href="./img/icon-svg-color.svg#icon-flag"></use>
+                </svg>
+                <span class="form-tel-ukr">+380</span>
+              </div>
+            </div>
+          </li>
+          <li class="leaverev-modal-item">
+            <textarea
+              class="form-input comment"
+              name="comment"
+              placeholder="Enter text"
+              id="comment"
+            ></textarea>
+          </li>
+          <li class="leaverev-modal-item">
+            <button type="submit" class="btn form-submit">Send</button>
+          </li>
+        </ul>
+      </form>
+    </div>
   </div>
 </div>

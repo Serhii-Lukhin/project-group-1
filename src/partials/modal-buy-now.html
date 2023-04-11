@@ -2,19 +2,15 @@
 <div class="backdrop-modal is-hidden" id="buynow">
   <div class="modal-wrap">
     <div class="buynow-modal">
-      <button
-        type="button"
-        class="buynow-modal-close button"
-        data-modal="buynow"
-      >
-        <svg class="buynow-modal-icon">
+      <button type="button" class="buynow-modal-close" data-modal="buynow">
+        <svg class="buynow-modal-close-icon" width="24" height="24">
           <use href="./img/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <h2 class="section-name">
+      <h2 class="section-name buynow-title">
         Buy <span class="section-name-accent">now</span>
       </h2>
-      <ul class="buynow-img list">
+      <ul class="buynow-img-list">
         <li class="buynow-img-item">
           <picture>
             <source
@@ -35,6 +31,7 @@
               class="buy-now-img"
               src="./img/buy-now/mobile/dark-1x.png"
               alt="two pieces of dark chocolate with dark chocolate chips"
+              width="84"
             />
           </picture>
           <div class="buynow-weight">100 g</div>
@@ -59,6 +56,7 @@
               class="buy-now-img"
               src="./img/buy-now/mobile/pyramid-1x.png"
               alt="a pyramid of alternating five pieces of white and black chocolate with nuts"
+              width="84"
             />
           </picture>
           <div class="buynow-weight">200 g</div>
@@ -83,96 +81,111 @@
               class="buy-now-img"
               src="./img/buy-now/mobile/stick-1x.png"
               alt="bar of dark and milk chocolate, part of which has been rubbed into chocolate chips"
+              width="84"
             />
           </picture>
           <div class="buynow-weight">300 g</div>
         </li>
       </ul>
       <form class="buynow-personal-data-form">
-        <div class="buynow-common-name">
-          <div class="buynow-personal-data">
-            <label for="name" class="buynow-personal-item"
+        <ul class="buynow-personal-list">
+          <li class="buynow-personal-item">
+            <label for="buynow-name" class="form-label"
               >Personal information</label
             >
+            <ul class="buynow-personal-item-fullname">
+              <li>
+                <input
+                  type="text"
+                  class="form-input"
+                  name="name"
+                  id="buynow-name"
+                  autofocus
+                  required
+                  placeholder="Name"
+                />
+              </li>
+              <li>
+                <input
+                  type="text"
+                  class="form-input"
+                  name="surname"
+                  id="buynow-urname"
+                  required
+                  placeholder="Surname"
+                />
+              </li>
+            </ul>
+          </li>
+          <li class="buynow-personal-item">
+            <label for="buynow-mail" class="form-label"
+              >Email</label
+            >
             <input
-              type="text"
-              class="buynow-form-input"
-              name="name"
-              id="name"
-              autofocus
+              type="email"
+              class="form-input"
+              name="mail"
+              id="buynow-mail"
               required
-              placeholder="Name"
+              placeholder="Enter your email"
             />
-          </div>
-          <div class="buynow-personal-data">
-            <input
-              type="text"
-              class="buynow-form-input"
-              name="surname"
-              id="surname"
-              required
-              placeholder="Surname"
-            />
-          </div>
-        </div>
-        <div class="buynow-personal-data">
-          <label for="mail" class="buynow-personal-item">Email</label>
-          <input
-            type="email"
-            class="buynow-form-input"
-            name="mail"
-            id="mail"
-            required
-            placeholder="Enter your email"
-          />
-        </div>
-        <div class="buynow-personal-data phone">
-          <label for="tel" class="buynow-personal-item">Phone number</label>
-          <input
-            type="text"
-            class="buynow-form-input phone"
-            name="tel"
-            id="tel"
-            pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
-            required
-            placeholder="Phone number"
-          />
-          <div class="buynow-flag">
-            <svg class="buynow-icon-flag">
-              <use href="./img/icon-svg-color.svg#icon-flag"></use>
-            </svg>
-            <div class="buynow-tel-ukr">+380</div>
-          </div>
-        </div>
-        <div class="buynow-personal-data card">
-          <label for="card-number" class="buynow-personal-item"
-            >Card number</label
-          >
-          <input
-            type="number"
-            class="buynow-form-input"
-            name="card-number"
-            id="card-number"
-            placeholder="Enter card"
-            required
-          />
-          <div class="buynow-card">
-            <svg class="buynow-icon">
-              <use href="./img/icon-svg-color.svg#icon-mastercard"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="buynow-personal-data">
-          <label for="comment" class="buynow-personal-item">Comment</label>
-          <textarea
-            name="comment"
-            class="buynow-form-input comment"
-            id="comment"
-            rows="3"
-            placeholder="Enter text"
-          ></textarea>
-        </div>
-        <button type="submit" class="btn buynow-submit button">Submit</button>
+          </li>
+          <li class="buynow-personal-item">
+            <label for="buynow-tel" class="form-label"
+              >Phone number</label
+            >
+            <div class="form-input-container">
+              <input
+                type="text"
+                class="form-input tel"
+                name="tel"
+                id="buynow-tel"
+                pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+                required
+                placeholder="Phone number"
+              />
+              <div class="form-tel-container">
+                <svg class="form-icon-flag" width="24" height="24">
+                  <use href="./img/icon-svg-color.svg#icon-flag"></use>
+                </svg>
+                <span class="form-tel-ukr">+380</span>
+              </div>
+            </div>
+          </li>
+          <li class="buynow-personal-item">
+            <label for="buynow-card-number" class="form-label"
+              >Card number</label
+            >
+            <div class="form-input-container">
+              <input
+                type="number"
+                class="form-input mastercard"
+                name="card-number"
+                id="buynow-card-number"
+                placeholder="Enter card"
+                required
+              />
+              <svg class="form-icon-mastercard" width="32" height="21">
+                <use href="./img/icon-svg-color.svg#icon-mastercard"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="buynow-personal-item">
+            <label for="buynow-comment" class="form-label"
+              >Comment</label
+            >
+            <textarea
+              name="comment"
+              class="form-input comment"
+              id="buynow-comment"
+              rows="3"
+              placeholder="Enter text"
+            ></textarea>
+          </li>
+          <li class="buynow-personal-item">
+            <button type="submit" class="btn form-submit">Submit</button>
+          </li>
+        </ul>
       </form>
     </div>
   </div>

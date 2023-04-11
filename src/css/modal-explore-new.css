@@ -1,6 +1,6 @@
 .exnew-modal {
+  position: relative;
   width: 311px;
-  height: 350px;
   background-color: #fff;
   border-radius: 15px;
   transform: scale(1);
@@ -27,7 +27,6 @@
 .exnew-modal-close:active .exnew-modal-icon {
   stroke: var(--orange);
 }
-
 .exnew-modal-icon {
   stroke: currentColor;
   stroke-width: 2px;
@@ -37,59 +36,33 @@
 
 .exnew-modal-text {
   padding: 32px 24px;
-  position: relative;
   background-color: var(--white);
 }
 .exnew-title {
   margin-bottom: 24px;
   text-align: left;
 }
-
-.exnew-form-input {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.22;
-  letter-spacing: -0.02em;
-  color: #000000;
-  border-radius: 20px;
-  width: 100%;
-  height: 45px;
-  border: 1px solid rgba(46, 47, 66, 0.2);
-  padding: 0 0 0 14px;
-  background-color: transparent;
-  outline: transparent;
-  transition: border-color var(--basic-transition);
-  color: var(--black);
+.exnew-input {
+  border-radius: 100px;
+}
+@media screen and (max-width: 767px) {
+  .exnew-modal-form {
+    position: relative;
+  }
+  .exnew-submit {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 14px 22px;
+    line-height: 1.21;
+    border: 1.8px solid var(--orange);
+  }
+  .exnew-submit:is(:hover, :focus) {
+    border-color: #fcf1e0;
+  }
 }
 
-.exnew-form-input:focus {
-  border-color: var(--orange);
-}
-.exnew-form-input::placeholder {
-  color: rgba(46, 47, 66, 0.2);
-}
-
-.exnew-modal-submit {
-  font-family: inherit;
-  width: 100px;
-  height: 45px;
-  background-color: var(--orange);
-  color: #fff;
-  border: none;
-  position: absolute;
-  right: 22px;
-  bottom: 32px;
-  padding: 0;
-  transition: background-color var(--basic-transition),
-    color var(--basic-transition);
-}
-
-.exnew-modal-submit:hover,
-.exnew-modal-submit:focus {
-  background-color: #fcf1e0;
-  color: var(--orange);
-}
 @media screen and (min-width: 768px) {
   .exnew-modal {
     width: 538px;
@@ -104,26 +77,12 @@
   }
   .exnew-modal-text {
     padding: 40px;
-    position: relative;
   }
   .exnew-modal-form {
     display: flex;
   }
-  .exnew-form-input {
-    font-size: 18px;
-    width: 313px;
-    height: 52px;
-  }
-  .exnew-form-input:hover,
-  .exnew-form-input:focus {
-    border-color: var(--orange);
-  }
-
-  .exnew-modal-submit {
-    width: 137px;
-    height: 52px;
-    position: static;
-    margin-left: 8px;
+  .exnew-input {
+    margin-right: 8px;
   }
 }
 
