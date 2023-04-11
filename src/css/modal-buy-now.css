@@ -104,25 +104,33 @@
 }
 .buynow-form-input {
   font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.22;
+  color: #000000;
   width: 100%;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
   outline: transparent;
   background-color: transparent;
-
-  line-height: 1.214;
-  color: rgba(64, 64, 64, 0.3);
   padding: 14px 18px;
   transition: border-color var(--orange);
 }
 
+.buynow-form-input::placeholder {
+  color: rgba(46, 47, 66, 0.2);
+}
 .buynow-form-input:focus {
   border-color: var(--orange);
 }
 .buynow-form-input.phone {
   padding: 10px 18px;
   padding-left: 106px;
+}
+
+.buynow-form-input::placeholder {
+  color: rgba(46, 47, 66, 0.2);
 }
 .buynow-form-input.comment {
   height: 91px;
@@ -221,7 +229,6 @@
   }
   .buynow-form-input {
     font-size: 18px;
-    line-height: 1.22;
     padding: 22px 24px;
   }
   .buynow-form-input:hover {
