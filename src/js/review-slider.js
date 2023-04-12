@@ -11,6 +11,7 @@ const sliderButtonNext = document.querySelector('.' + NEXT_BUTTON);
 const sliderContainer = document.querySelector('.' + SLIDER_CONTAINER);
 const sliderTrack = document.querySelector('.' + SLIDER_TRACK);
 const slideBarStatus = document.querySelectorAll('.' + SLIDE_BAR_STATUS);
+
 //кнопка назад
 sliderButtonPrev.addEventListener('click', function () {
   let myButtonClick = 'prev';
@@ -23,6 +24,15 @@ sliderButtonNext.addEventListener('click', function () {
   SlideRun(myButtonClick);
   sliderStatus(1);
 });
+//точки в статус барі
+slideBarStatus.forEach(function (myPoint, y, slideBarStatus) {
+  myPoint.addEventListener('click', function () {
+    let pointClick = myPoint.getAttribute('data-slider');
+    SlideRun(pointClick);
+    sliderStatus(0, pointClick);
+  });
+});
+//
 const sliderButtons = sliderTrackWidth => {
   if (sliderPosition == 0) {
     sliderButtonPrev.setAttribute('style', 'display:none');
@@ -35,14 +45,19 @@ const sliderButtons = sliderTrackWidth => {
     sliderButtonNext.removeAttribute('style');
   }
 };
-const sliderStatus = k => {
+const sliderStatus = (k, l) => {
   let slideBarStatusActive = document.querySelector(
     '.' + SLIDE_BAR_STATUS_ACTIVE
   );
   slideBarStatus.forEach(function (item, i, slideBarStatus) {
-    if (item == slideBarStatusActive) {
+    if (k == 0) {
       item.classList.remove(SLIDE_BAR_STATUS_ACTIVE);
-      slideBarStatus[i + k].classList.add(SLIDE_BAR_STATUS_ACTIVE);
+      slideBarStatus[l - 1].classList.add(SLIDE_BAR_STATUS_ACTIVE);
+    } else {
+      if (item == slideBarStatusActive) {
+        item.classList.remove(SLIDE_BAR_STATUS_ACTIVE);
+        slideBarStatus[i + k].classList.add(SLIDE_BAR_STATUS_ACTIVE);
+      }
     }
   });
 };
@@ -61,6 +76,8 @@ const SlideRun = myButtonClick => {
     if (sliderPosition < -sliderTrackWidth) {
       sliderPosition = -sliderTrackWidth;
     }
+  } else {
+    sliderPosition = -sliderItemWidth * (myButtonClick - 1);
   }
   let style = 'transform: translateX(' + sliderPosition + 'px)';
   sliderTrack.setAttribute('style', style);
