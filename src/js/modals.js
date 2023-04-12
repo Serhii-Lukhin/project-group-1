@@ -1,17 +1,21 @@
 document.addEventListener('click', function (event) {
-  const widthBefor = document.documentElement.clientWidth;
+  /*const widthBefor = document.documentElement.clientWidth;*/
   const myModal = event.target;
   const myModalId = myModal.dataset.modal;
   if (!(myModalId == null)) {
     const myBody = document.body;
-    myBody.classList.toggle('scroll-stop');
-    const widthAfter = document.documentElement.clientWidth;
+    const myWindow = window.innerWidth;
+    const myViewport = document.documentElement.clientWidth;
+    const isScrollBar = myWindow - myViewport;
     const myModalForm = document.querySelector('#' + myModalId);
-    if (widthAfter > widthBefor) {
-      myBody.style.paddingRight = widthAfter - widthBefor + 'px';
+    if (isScrollBar > 0) {
+      myBody.style.paddingRight = isScrollBar + 'px';
+      myModalForm.style.paddingRight = isScrollBar + 'px';
     } else {
+      myModalForm.removeAttribute('style');
       myBody.removeAttribute('style');
     }
+    myBody.classList.toggle('scroll-stop');
     myModalForm.classList.toggle('is-hidden');
   }
 });
